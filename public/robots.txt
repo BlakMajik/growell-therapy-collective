@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /client-portal/redirect
+
+Sitemap: https://growelltherapycollective.com/sitemap.xml
