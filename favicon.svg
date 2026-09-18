@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <rect width="48" height="48" rx="12" fill="#24382F"/>
+  <!-- Stylized leaf & budding growth symbol -->
+  <path d="M24 38C24 28 32 20 38 18C34 26 30 38 24 38Z" fill="#C07758" opacity="0.9"/>
+  <path d="M24 38C24 24 14 16 10 14C14 24 18 38 24 38Z" fill="#557A68"/>
+  <path d="M24 38V12" stroke="#FBF9F4" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="24" cy="10" r="3" fill="#D4A373"/>
+</svg>
