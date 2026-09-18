@@ -18,6 +18,7 @@ import {
 import { SEOHead } from '../components/SEOHead';
 import { ConsultationCTA } from '../components/ConsultationCTA';
 import { siteConfig } from '../config/siteConfig';
+import { getAssetUrl } from '../utils/assets';
 
 export const ApproachPage: React.FC = () => {
   return (
@@ -73,7 +74,7 @@ export const ApproachPage: React.FC = () => {
             <div className="ecosystem-visual">
               <div className="rounded-image-wrapper">
                 <img
-                  src="/images/whole-person-creative.jpg"
+                  src={getAssetUrl('/images/whole-person-creative.jpg')}
                   alt="Mindful journaling, botanicals, and watercolor paints reflecting whole-person healing"
                   className="rounded-feature-img"
                   loading="lazy"

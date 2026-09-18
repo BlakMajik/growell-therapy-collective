@@ -17,6 +17,7 @@ import {
 import { SEOHead } from '../components/SEOHead';
 import { ConsultationCTA } from '../components/ConsultationCTA';
 import { trackEvent } from '../services/analytics';
+import { getAssetUrl } from '../utils/assets';
 
 export const EmdrPage: React.FC = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(0);
@@ -90,7 +91,7 @@ export const EmdrPage: React.FC = () => {
             <div className="emdr-hero-visual">
               <div className="rounded-image-wrapper">
                 <img
-                  src="/images/emdr-pathway.jpg"
+                  src={getAssetUrl('/images/emdr-pathway.jpg')}
                   alt="Tranquil stone pathway through sunlit ferns evoking mental clarity and trauma recovery"
                   className="rounded-feature-img"
                   loading="eager"

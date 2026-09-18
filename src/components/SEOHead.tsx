@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { siteConfig } from '../config/siteConfig';
+import { getAssetUrl } from '../utils/assets';
 
 export interface SEOHeadProps {
   title?: string;
@@ -28,7 +29,8 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
 
   const siteUrl = "https://growelltherapycollective.com";
   const canonicalUrl = `${siteUrl}${canonicalPath}`;
-  const fullImageUrl = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
+  const resolvedOgImage = getAssetUrl(ogImage);
+  const fullImageUrl = resolvedOgImage.startsWith('http') ? resolvedOgImage : `${siteUrl}${resolvedOgImage}`;
 
   useEffect(() => {
     // 1. Update Title

@@ -17,6 +17,7 @@ import {
 import { SEOHead } from '../components/SEOHead';
 import { ConsultationCTA } from '../components/ConsultationCTA';
 import { trackEvent } from '../services/analytics';
+import { getAssetUrl } from '../utils/assets';
 
 export const AdvocacyPage: React.FC = () => {
   const advocacyServices = [
@@ -120,7 +121,7 @@ export const AdvocacyPage: React.FC = () => {
             <div className="advocacy-hero-visual">
               <div className="rounded-image-wrapper">
                 <img
-                  src="/images/educational-advocacy.jpg"
+                  src={getAssetUrl('/images/educational-advocacy.jpg')}
                   alt="An organized, welcoming educational consultation workspace with an open notebook, planner, and warm lighting"
                   className="rounded-feature-img"
                   loading="eager"

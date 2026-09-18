@@ -15,6 +15,7 @@ import {
 import { SEOHead } from '../components/SEOHead';
 import { ConsultationCTA } from '../components/ConsultationCTA';
 import { siteConfig } from '../config/siteConfig';
+import { getAssetUrl } from '../utils/assets';
 
 export const AboutPage: React.FC = () => {
   return (
@@ -46,7 +47,7 @@ export const AboutPage: React.FC = () => {
 
             <div className="about-hero-portrait-frame">
               <img
-                src="/images/jessica-mouzon.jpg"
+                src={getAssetUrl('/images/jessica-mouzon.jpg')}
                 alt="Jessica Mouzon in a calm, modern, sunlit consultation office"
                 className="about-portrait-img"
               />

@@ -22,6 +22,7 @@ import { SEOHead } from '../components/SEOHead';
 import { ConsultationCTA } from '../components/ConsultationCTA';
 import { siteConfig } from '../config/siteConfig';
 import { trackEvent } from '../services/analytics';
+import { getAssetUrl } from '../utils/assets';
 
 export const HomePage: React.FC = () => {
   return (
@@ -86,7 +87,7 @@ export const HomePage: React.FC = () => {
           <div className="hero-media">
             <div className="hero-image-frame">
               <img
-                src="/images/hero-space.jpg"
+                src={getAssetUrl('/images/hero-space.jpg')}
                 alt="A warm, sunlit, tranquil therapy and consultation room with lush green plants and comfortable linen chairs"
                 className="hero-img"
                 loading="eager"
@@ -223,7 +224,7 @@ export const HomePage: React.FC = () => {
             <div className="therapy-highlight-visual">
               <div className="rounded-image-wrapper">
                 <img
-                  src="/images/emdr-pathway.jpg"
+                  src={getAssetUrl('/images/emdr-pathway.jpg')}
                   alt="A tranquil stone path winding through lush green ferns and peaceful sunlight"
                   className="rounded-feature-img"
                   loading="lazy"
@@ -241,7 +242,7 @@ export const HomePage: React.FC = () => {
             <div className="advocacy-visual-col">
               <div className="rounded-image-wrapper">
                 <img
-                  src="/images/educational-advocacy.jpg"
+                  src={getAssetUrl('/images/educational-advocacy.jpg')}
                   alt="A warm, organized educational consultation workspace with an open notebook, tea, and plant"
                   className="rounded-feature-img"
                   loading="lazy"
@@ -310,7 +311,7 @@ export const HomePage: React.FC = () => {
             <div className="grid-2 align-center">
               <div className="clinician-portrait-wrap">
                 <img
-                  src="/images/jessica-mouzon.jpg"
+                  src={getAssetUrl('/images/jessica-mouzon.jpg')}
                   alt="Jessica Mouzon, Clinical Mental Health Counselor and Educational Advocate"
                   className="clinician-portrait"
                   loading="lazy"
@@ -465,7 +466,7 @@ export const HomePage: React.FC = () => {
             <div className="mediums-visual">
               <div className="rounded-image-wrapper">
                 <img
-                  src="/images/whole-person-creative.jpg"
+                  src={getAssetUrl('/images/whole-person-creative.jpg')}
                   alt="Mindful journal, botanical elements, teacup, and watercolor palette on linen fabric"
                   className="rounded-feature-img"
                   loading="lazy"
