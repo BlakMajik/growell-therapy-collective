@@ -108,7 +108,7 @@ export const ClientPortalPage: React.FC = () => {
                   </p>
                   <div className="portal-direct-contact">
                     <Link to="/contact" className="btn btn-forest btn-sm">
-                      Contact Jessica Mouzon &rarr;
+                      Contact Jessica N. Mouzon &rarr;
                     </Link>
                   </div>
                 </div>

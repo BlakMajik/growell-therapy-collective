@@ -10,7 +10,11 @@ import {
   ArrowRight, 
   ShieldAlert, 
   Clock, 
-  FileCheck 
+  FileCheck,
+  Compass,
+  Users,
+  Layers,
+  HeartHandshake
 } from 'lucide-react';
 import { SEOHead } from '../components/SEOHead';
 import { ConsultationCTA } from '../components/ConsultationCTA';
@@ -21,8 +25,8 @@ export const AboutPage: React.FC = () => {
   return (
     <div className="about-page">
       <SEOHead
-        title="Meet Jessica Mouzon | Clinician & Educational Specialist"
-        description="Learn about Jessica Mouzon, founder of GroWell Therapy Collective. Clinical mental health counselor, licensed K-12 educator, and EMDR certified therapist with ~11 years of experience."
+        title="Jessica N. Mouzon, MA, LCMHC"
+        description="Learn about Jessica N. Mouzon, MA, LCMHC, founder of GroWell Therapy Collective. Licensed Clinical Mental Health Counselor (NC #16006), Exceptional Children's K–12 Educator, and EMDR clinician."
         canonicalPath="/about"
       />
 
@@ -31,24 +35,24 @@ export const AboutPage: React.FC = () => {
         <div className="container">
           <div className="grid-2 align-center">
             <div className="about-hero-text">
-              <span className="badge badge-sage">Founder & Clinician</span>
-              <h1 id="about-hero-title" className="about-title">Meet Jessica Mouzon</h1>
+              <span className="badge badge-sage">Founder & Licensed Clinical Mental Health Counselor</span>
+              <h1 id="about-hero-title" className="about-title">Jessica N. Mouzon, MA, LCMHC</h1>
               <p className="lead">
-                Bridging clinical psychotherapy, trauma-informed healing, and K–12 educational advocacy to support the whole person.
+                Bridging clinical mental health care, trauma-informed treatment, educational expertise, and family advocacy.
               </p>
               <p>
-                Jessica Mouzon founded GroWell Therapy Collective with a foundational belief: growth is not a rigid, linear formula. Human beings thrive when their mental health, learning differences, family systems, and life environments are understood collaboratively.
+                Jessica founded GroWell Therapy Collective with a foundational belief: growth is not a rigid, linear formula. Human beings thrive when their mental health, learning differences, family systems, and life environments are understood collaboratively.
               </p>
               <div className="about-experience-badge">
                 <Clock size={20} className="exp-icon" />
-                <span><strong>{siteConfig.experienceYears}</strong> across clinical and educational settings.</span>
+                <span><strong>{siteConfig.experienceSummary}</strong></span>
               </div>
             </div>
 
             <div className="about-hero-portrait-frame">
               <img
                 src={getAssetUrl('/images/jessica-mouzon.jpg')}
-                alt="Jessica Mouzon in a calm, modern, sunlit consultation office"
+                alt="Jessica N. Mouzon, MA, LCMHC in a calm, modern, sunlit consultation office"
                 className="about-portrait-img"
               />
             </div>
@@ -56,31 +60,95 @@ export const AboutPage: React.FC = () => {
         </div>
       </section>
 
+      {/* A Career at the Intersection of Mental Health and Education */}
+      <section className="section" aria-labelledby="intersection-heading">
+        <div className="container container-narrow">
+          <div className="text-center" style={{ marginBottom: '2.5rem' }}>
+            <span className="badge badge-terracotta">Dual Background</span>
+            <h2 id="intersection-heading" className="section-title">
+              A Career at the Intersection of Mental Health and Education
+            </h2>
+            <p className="section-subtitle">
+              Her career has repeatedly placed her at the intersection of emotional health, behavior, learning, family systems, schools, community resources, and clinical care.
+            </p>
+          </div>
+
+          <div className="career-roles-grid grid-2" style={{ marginBottom: '2.5rem' }}>
+            <div className="card role-card">
+              <div className="role-icon-wrap icon-terracotta">
+                <GraduationCap size={24} />
+              </div>
+              <h4>Special Education Teacher & K–12 Instruction</h4>
+              <p>
+                Direct classroom experience designing differentiated instruction, implementing behavior support plans, and supporting students receiving special education services.
+              </p>
+            </div>
+
+            <div className="card role-card">
+              <div className="role-icon-wrap icon-sage">
+                <BookOpen size={24} />
+              </div>
+              <h4>Exceptional Children’s Program Coordination</h4>
+              <p>
+                Process coordinating teacher leading IEP meetings, managing referral pipelines, developing special education workflows, and coaching educators.
+              </p>
+            </div>
+
+            <div className="card role-card">
+              <div className="role-icon-wrap icon-sand">
+                <Users size={24} />
+              </div>
+              <h4>Intensive In-Home Clinical Leadership</h4>
+              <p>
+                Providing intensive, systemic clinical intervention for youth and families in crisis—navigating family dynamics, community support systems, and multi-agency coordination.
+              </p>
+            </div>
+
+            <div className="card role-card">
+              <div className="role-icon-wrap icon-forest">
+                <Layers size={24} />
+              </div>
+              <h4>Outpatient & School-Based Mental Health Therapy</h4>
+              <p>
+                Individual psychotherapy for adolescents and adults addressing trauma reprocessing, anxiety disorders, depression, executive functioning, and life transitions.
+              </p>
+            </div>
+          </div>
+
+          <p className="career-summary-note">
+            Rather than treating educational challenges and psychological distress as separate silos, Jessica integrates both worlds. She understands that a student’s classroom struggles often reflect nervous system overwhelm, and that clinical progress flourishes when reinforced by supportive academic and family environments.
+          </p>
+        </div>
+      </section>
+
       {/* Core Credentials Badges Section */}
-      <section className="section" aria-labelledby="creds-heading">
+      <section className="section section-bg-sage" aria-labelledby="creds-heading">
         <div className="container">
           <div className="section-header text-center">
-            <span className="badge badge-terracotta">Professional Standards</span>
-            <h2 id="creds-heading" className="section-title">Credentials & Professional Licensure</h2>
+            <span className="badge badge-forest">Education & Licensure</span>
+            <h2 id="creds-heading" className="section-title">Credentials & Verified Licensure</h2>
             <p className="section-subtitle">
-              Grounded in rigorous clinical training, trauma-informed methodologies, and specialized educator licensure.
+              Grounded in rigorous CACREP-accredited graduate training, state clinical licensure, specialized educator credentials, and advanced therapeutic modalities.
             </p>
           </div>
 
           <div className="grid-3 creds-grid">
-            {/* Credential 1: Mental Health Licensure */}
+            {/* Credential 1: Graduate Education & Clinical Licensure */}
             <div className="card cred-card">
               <div className="cred-icon-wrap icon-sage">
                 <FileCheck size={28} />
               </div>
-              <span className="cred-category">Clinical Psychotherapy</span>
-              <h3 className="cred-card-title">{siteConfig.credentials.clinicalCounseling}</h3>
+              <span className="cred-category">Graduate Education & License</span>
+              <h3 className="cred-card-title">{siteConfig.exactLicenseDesignation}</h3>
               <div className="cred-status-box">
-                <p><strong>License Designation:</strong> {siteConfig.credentials.exactLicenseDesignation}</p>
-                <p><strong>NC License Number:</strong> {siteConfig.credentials.ncLicenseNumber}</p>
+                <p><strong>Licensure:</strong> {siteConfig.ncLicenseNumber}</p>
+                <p><strong>Graduate Degree:</strong> Master of Arts in Counseling</p>
+                <p><strong>Track:</strong> Clinical Mental Health Track</p>
+                <p><strong>Institution:</strong> Wake Forest University</p>
+                <p><strong>Accreditation:</strong> CACREP-Accredited Program</p>
               </div>
               <p className="cred-card-desc">
-                Dedicated to evidence-based psychotherapy, emotional regulation, and compassionate mental health support for individuals from adolescence through adulthood.
+                Providing evidence-based psychotherapy, trauma resolution, and compassionate mental health counseling for adolescents (11+), adults, and families.
               </p>
             </div>
 
@@ -89,71 +157,95 @@ export const AboutPage: React.FC = () => {
               <div className="cred-icon-wrap icon-terracotta">
                 <GraduationCap size={28} />
               </div>
-              <span className="cred-category">Specialized Education</span>
+              <span className="cred-category">Specialized Educator License</span>
               <h3 className="cred-card-title">{siteConfig.credentials.educationLicense}</h3>
               <div className="cred-status-box">
-                <p><strong>Curriculum Scope:</strong> K–12 Exceptional Children</p>
-                <p><strong>Focus:</strong> Learning differences, accommodations & IEPs</p>
+                <p><strong>Scope:</strong> Exceptional Children K–12</p>
+                <p><strong>Expertise:</strong> IEP management & referral workflows</p>
+                <p><strong>Assessment:</strong> Academic & psychoeducational interpretation</p>
+                <p><strong>Advocacy:</strong> 504 plans & behavioral support plans</p>
               </div>
               <p className="cred-card-desc">
-                Deep working knowledge of school systems, specialized instruction, 504 plans, behavioral supports, and collaborative parent advocacy.
+                In-depth practical experience inside the school system, empowering parents and students through collaborative, informed educational advocacy.
               </p>
             </div>
 
-            {/* Credential 3: EMDR Certification & Modalities */}
+            {/* Credential 3: Modalities & Training */}
             <div className="card cred-card">
               <div className="cred-icon-wrap icon-sand">
                 <Award size={28} />
               </div>
-              <span className="cred-category">Advanced Modalities</span>
-              <h3 className="cred-card-title">{siteConfig.credentials.emdrCertified}</h3>
+              <span className="cred-category">Clinical Modalities & Training</span>
+              <h3 className="cred-card-title">Evidence-Informed Approaches</h3>
               <div className="cred-status-box">
-                <p><strong>Trauma Modalities:</strong> EMDR & TF-CBT</p>
-                <p><strong>Complementary:</strong> {siteConfig.credentials.reikiTraining}</p>
+                <p><strong>Trauma & Reprocessing:</strong> EMDR & TF-CBT</p>
+                <p><strong>Cognitive / Humanistic:</strong> CBT & Person-Centered</p>
+                <p><strong>Couples & Relationships:</strong> Gottman Method Level I Training</p>
+                <p><strong>Complementary Wellness:</strong> Reiki Level II</p>
               </div>
               <p className="cred-card-desc">
-                Certified in Eye Movement Desensitization and Reprocessing to help clients safely process trauma, alongside Level II Reiki training for complementary relaxation.
+                Equipped with specialized clinical frameworks for trauma processing, cognitive reframing, and relational dynamics, alongside gentle complementary relaxation tools.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Professional Background & Philosophy */}
-      <section className="section section-bg-sage" aria-labelledby="journey-heading">
+      {/* Professional Philosophy Flow */}
+      <section className="section" aria-labelledby="journey-heading">
         <div className="container container-narrow">
           <div className="about-story-flow">
-            <span className="badge badge-forest">The Story Behind GroWell</span>
-            <h2 id="journey-heading" className="section-title" style={{ marginTop: '0.75rem' }}>
-              Why GroWell Therapy Collective?
-            </h2>
+            <div className="text-center" style={{ marginBottom: '2.5rem' }}>
+              <span className="badge badge-sand">Our Approach</span>
+              <h2 id="journey-heading" className="section-title" style={{ marginTop: '0.75rem' }}>
+                Jessica’s Clinical & Educational Philosophy
+              </h2>
+            </div>
 
             <div className="story-paragraphs">
               <p className="lead">
-                Throughout over a decade of working with students, parents, and adults, one theme repeatedly emerged: people are rarely struggling in isolation.
+                Throughout more than a decade of working with students, parents, and adults, one theme repeatedly emerged: people are rarely struggling in isolation.
               </p>
               <p>
-                A teenager struggling with school attendance might be battling an undiagnosed learning difference, sensory overload, or social anxiety. A parent trying to support their child might feel overwhelmed by confusing educational paperwork and adversarial school meetings. An adult navigating trauma might feel that traditional talk therapy alone hasn't helped their body feel truly calm.
+                A teenager struggling with school attendance might be battling an undiagnosed learning difference, sensory overload, or social anxiety. A parent trying to support their child might feel overwhelmed by confusing educational paperwork and adversarial school meetings. An adult navigating trauma might feel that traditional talk therapy alone hasn't helped their nervous system feel truly calm.
               </p>
               <p>
                 Jessica created GroWell to tear down the silos between clinical psychotherapy, educational navigation, and whole-person wellness. At GroWell, treatment plans are tailored to your real life—integrating practical strategies, deep trauma reprocessing, and collaborative advocacy when needed.
               </p>
 
-              <h3 style={{ marginTop: '2.5rem', marginBottom: '1rem' }}>Jessica’s Clinical & Educational Approach</h3>
-              <ul className="approach-bullet-list">
-                <li>
-                  <strong>Trauma-Informed & Safe:</strong> Grounded in the understanding of how traumatic stress impacts the nervous system, memory, and relationships.
-                </li>
-                <li>
-                  <strong>Developmentally Attuned:</strong> Tailoring communication, pacing, and therapeutic mediums to adolescents (11+), emerging young adults, and mature adults.
-                </li>
-                <li>
-                  <strong>Strengths-Based & Collaborative:</strong> You are the expert on your own lived experience; Jessica acts as a skilled guide, clinician, and advocate.
-                </li>
-                <li>
-                  <strong>Transparent & Grounded:</strong> Free of clinical pretense and medical jargon, focusing on practical tools and authentic connection.
-                </li>
-              </ul>
+              <div className="philosophy-principles-grid" style={{ marginTop: '2rem' }}>
+                <div className="card card-tint principle-card">
+                  <div className="principle-header">
+                    <CheckCircle2 size={20} className="principle-check" />
+                    <h4>Trauma-Informed & Safe</h4>
+                  </div>
+                  <p>Grounded in the understanding of how traumatic stress impacts the nervous system, memory, and relationships.</p>
+                </div>
+
+                <div className="card card-tint principle-card">
+                  <div className="principle-header">
+                    <CheckCircle2 size={20} className="principle-check" />
+                    <h4>Developmentally Attuned</h4>
+                  </div>
+                  <p>Tailoring communication, pacing, and therapeutic mediums to adolescents (11+), emerging young adults, and mature adults.</p>
+                </div>
+
+                <div className="card card-tint principle-card">
+                  <div className="principle-header">
+                    <CheckCircle2 size={20} className="principle-check" />
+                    <h4>Strengths-Based & Collaborative</h4>
+                  </div>
+                  <p>You are the expert on your own lived experience; Jessica acts as a skilled guide, clinician, and advocate.</p>
+                </div>
+
+                <div className="card card-tint principle-card">
+                  <div className="principle-header">
+                    <CheckCircle2 size={20} className="principle-check" />
+                    <h4>Transparent & Grounded</h4>
+                  </div>
+                  <p>Free of clinical pretense and medical jargon, focusing on practical tools and authentic human connection.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -161,8 +253,8 @@ export const AboutPage: React.FC = () => {
 
       {/* Final Conversion CTA */}
       <ConsultationCTA
-        title="Connect With Jessica Mouzon"
-        subtitle="Schedule a free consultation to discuss your needs, explore therapy or advocacy options, and determine if GroWell is the right fit."
+        title="Connect With Jessica N. Mouzon"
+        subtitle="Schedule a consultation to discuss your needs, explore therapy or advocacy options, and determine if GroWell is the right fit."
       />
 
       <style>{`
@@ -174,6 +266,7 @@ export const AboutPage: React.FC = () => {
 
         .about-title {
           margin: 0;
+          font-size: clamp(2.15rem, 3.8vw, 3.25rem);
         }
 
         .about-experience-badge {
@@ -206,6 +299,47 @@ export const AboutPage: React.FC = () => {
           display: block;
           object-fit: cover;
           aspect-ratio: 4 / 5;
+        }
+
+        /* Career Roles Grid */
+        .career-roles-grid {
+          gap: 1.5rem;
+        }
+
+        .role-card {
+          padding: 2rem 1.75rem;
+        }
+
+        .role-icon-wrap {
+          width: 48px;
+          height: 48px;
+          border-radius: var(--radius-md);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 1rem;
+        }
+
+        .role-card h4 {
+          font-size: 1.15rem;
+          color: var(--color-forest);
+          margin-bottom: 0.5rem;
+        }
+
+        .role-card p {
+          font-size: 0.92rem;
+          line-height: 1.55;
+          margin: 0;
+        }
+
+        .career-summary-note {
+          font-size: 1.05rem;
+          line-height: 1.7;
+          color: var(--color-forest);
+          background-color: var(--color-linen);
+          border-left: 3px solid var(--color-sage);
+          padding: 1.25rem 1.5rem;
+          border-radius: var(--radius-sm);
         }
 
         /* Creds Grid */
@@ -251,10 +385,10 @@ export const AboutPage: React.FC = () => {
         }
 
         .cred-status-box p {
-          margin: 0;
+          margin: 0.25rem 0;
           font-size: 0.82rem;
           color: var(--color-text-main);
-          line-height: 1.5;
+          line-height: 1.45;
         }
 
         .cred-status-box p strong {
@@ -276,33 +410,38 @@ export const AboutPage: React.FC = () => {
           margin-bottom: 1.5rem;
         }
 
-        .approach-bullet-list {
-          list-style: none;
+        .philosophy-principles-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1.25rem;
+        }
+
+        .principle-card {
+          padding: 1.5rem;
+        }
+
+        .principle-header {
           display: flex;
-          flex-direction: column;
-          gap: 1rem;
-          margin-top: 1rem;
+          align-items: center;
+          gap: 0.5rem;
+          margin-bottom: 0.5rem;
         }
 
-        .approach-bullet-list li {
-          font-size: 1.02rem;
-          color: var(--color-text-muted);
-          position: relative;
-          padding-left: 1.75rem;
-          line-height: 1.6;
-        }
-
-        .approach-bullet-list li::before {
-          content: '✓';
-          position: absolute;
-          left: 0;
+        .principle-check {
           color: var(--color-sage);
-          font-weight: 700;
-          font-size: 1.1rem;
+          flex-shrink: 0;
         }
 
-        .approach-bullet-list strong {
+        .principle-header h4 {
+          font-size: 1.05rem;
           color: var(--color-forest);
+          margin: 0;
+        }
+
+        .principle-card p {
+          font-size: 0.88rem;
+          line-height: 1.5;
+          margin: 0;
         }
 
         @media (max-width: 900px) {
@@ -313,6 +452,10 @@ export const AboutPage: React.FC = () => {
             order: 1;
             max-width: 480px;
             margin: 0 auto;
+          }
+          .career-roles-grid,
+          .philosophy-principles-grid {
+            grid-template-columns: 1fr;
           }
         }
       `}</style>

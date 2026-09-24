@@ -12,7 +12,10 @@ import {
   Briefcase, 
   Lightbulb, 
   Compass, 
-  MessageSquare 
+  MessageSquare,
+  Sparkles,
+  Layers,
+  HeartHandshake
 } from 'lucide-react';
 import { SEOHead } from '../components/SEOHead';
 import { ConsultationCTA } from '../components/ConsultationCTA';
@@ -78,8 +81,8 @@ export const AdvocacyPage: React.FC = () => {
   return (
     <div className="advocacy-page">
       <SEOHead
-        title="Educational & Student Advocacy | IEP & 504 Navigation"
-        description="Exceptional Children's K-12 educator and mental health clinician Jessica Mouzon helps parents navigate IEPs, 504 plans, and school meetings with confidence."
+        title="IEP & Educational Advocacy"
+        description="Exceptional Children's K–12 educator and licensed clinician Jessica N. Mouzon, MA, LCMHC helps parents navigate IEPs, 504 plans, and school meetings with confidence."
         canonicalPath="/educational-advocacy"
       />
 
@@ -93,7 +96,7 @@ export const AdvocacyPage: React.FC = () => {
                 Helping Families Navigate Educational Challenges With Confidence.
               </h1>
               <p className="lead">
-                Jessica Mouzon combines an Exceptional Children’s General Curriculum K–12 Educator License with over a decade of mental health counseling to help parents advocate effectively for their children.
+                Jessica N. Mouzon, MA, LCMHC combines an Exceptional Children’s General Curriculum K–12 Educator License with more than a decade of mental health counseling to help parents advocate effectively for their children.
               </p>
 
               {/* Strict Legal Disclaimer */}
@@ -132,49 +135,142 @@ export const AdvocacyPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Why Jessica's Dual Perspective Matters */}
-      <section className="section" aria-labelledby="why-dual-heading">
+      {/* Experience Inside the Educational System */}
+      <section className="section" aria-labelledby="system-experience-heading">
         <div className="container container-narrow">
-          <div className="text-center" style={{ marginBottom: '3rem' }}>
-            <span className="badge badge-sage">The Dual Perspective</span>
-            <h2 id="why-dual-heading" className="section-title">
-              Bridging Mental Health & Special Education
+          <div className="text-center" style={{ marginBottom: '2.5rem' }}>
+            <span className="badge badge-sage">Educator Expertise</span>
+            <h2 id="system-experience-heading" className="section-title">
+              Experience Inside the Educational System
             </h2>
             <p className="section-subtitle">
-              Most therapists do not hold K–12 special education licenses, and most school advocates lack clinical mental health training. GroWell sits at the unique intersection of both.
+              Jessica understands these systems from both sides of the table—as a mental health clinician supporting students and families and as an experienced Exceptional Children's educator working within school systems.
             </p>
           </div>
 
-          <div className="dual-perspective-cards grid-2">
-            <div className="card card-tint">
-              <div className="dual-card-icon">
-                <GraduationCap size={28} className="icon-terracotta" />
+          <div className="experience-items-grid grid-2">
+            <div className="experience-item-card card">
+              <CheckCircle2 size={20} className="exp-item-icon" />
+              <div>
+                <strong>Creating & Managing IEPs</strong>
+                <p>Drafting individualized goals, tracking quarterly progress, and aligning specialized instruction with curriculum standards.</p>
               </div>
-              <h3 style={{ color: 'var(--color-forest)', marginBottom: '0.75rem' }}>Inside the School System</h3>
-              <p>
-                As a licensed Exceptional Children's educator, Jessica understands school district hierarchies, IDEA legal timelines, accommodation feasibility, and how educators assess progress behind closed doors.
-              </p>
             </div>
 
-            <div className="card card-sage">
-              <div className="dual-card-icon">
-                <Lightbulb size={28} className="icon-sage" />
+            <div className="experience-item-card card">
+              <CheckCircle2 size={20} className="exp-item-icon" />
+              <div>
+                <strong>Coordinating IEP Referral Processes</strong>
+                <p>Guiding child-find referrals, Multi-Tiered System of Supports (MTSS), and multidisciplinary evaluation timelines.</p>
               </div>
-              <h3 style={{ color: 'var(--color-forest)', marginBottom: '0.75rem' }}>Inside the Nervous System</h3>
-              <p>
-                As a mental health counselor, Jessica understands how anxiety, trauma, sensory overload, ADHD, and emotional dysregulation directly affect executive functioning, classroom participation, and test performance.
-              </p>
+            </div>
+
+            <div className="experience-item-card card">
+              <CheckCircle2 size={20} className="exp-item-icon" />
+              <div>
+                <strong>Academic Assessment & Interpretation</strong>
+                <p>Administering academic evaluations and translating complex psychoeducational reports into clear, actionable classroom plans.</p>
+              </div>
+            </div>
+
+            <div className="experience-item-card card">
+              <CheckCircle2 size={20} className="exp-item-icon" />
+              <div>
+                <strong>Writing Behavior Support Plans</strong>
+                <p>Developing functional behavior assessments (FBAs) and positive, neurodivergent-affirming behavioral interventions.</p>
+              </div>
+            </div>
+
+            <div className="experience-item-card card">
+              <CheckCircle2 size={20} className="exp-item-icon" />
+              <div>
+                <strong>Exceptional Children's Programming</strong>
+                <p>Managing district procedures, compliance standards, and specialized workflows across grade levels.</p>
+              </div>
+            </div>
+
+            <div className="experience-item-card card">
+              <CheckCircle2 size={20} className="exp-item-icon" />
+              <div>
+                <strong>Teacher Coaching & Professional Development</strong>
+                <p>Training and mentoring special education teachers, general education staff, and multidisciplinary teams.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* When Mental Health and Education Intersect */}
+      <section className="section section-bg-sage" aria-labelledby="intersect-section-heading">
+        <div className="container container-narrow">
+          <div className="text-center" style={{ marginBottom: '2.5rem' }}>
+            <span className="badge badge-forest">Holistic Understanding</span>
+            <h2 id="intersect-section-heading" className="section-title">
+              When Mental Health and Education Intersect
+            </h2>
+            <p className="section-subtitle">
+              Students rarely experience challenges in isolation. Cognitive learning, nervous system regulation, and classroom environments continuously influence one another.
+            </p>
+          </div>
+
+          <div className="intersection-breakdown card" style={{ padding: '2.5rem 2.25rem' }}>
+            <p className="lead" style={{ marginBottom: '1.25rem' }}>
+              A student may be navigating overlapping factors that impact their ability to thrive in school:
+            </p>
+
+            <div className="intersect-factors-grid grid-2">
+              <div className="factor-pill">
+                <span className="factor-dot">•</span>
+                <span><strong>Emotional Concerns:</strong> Anxiety, perfectionism, or mood dysregulation</span>
+              </div>
+              <div className="factor-pill">
+                <span className="factor-dot">•</span>
+                <span><strong>Trauma & Stress:</strong> Nervous system hyperarousal or shutdown</span>
+              </div>
+              <div className="factor-pill">
+                <span className="factor-dot">•</span>
+                <span><strong>Behavior Challenges:</strong> Frustration responses, task avoidance, or impulsivity</span>
+              </div>
+              <div className="factor-pill">
+                <span className="factor-dot">•</span>
+                <span><strong>Academic Struggles:</strong> Working memory overload or processing speed gaps</span>
+              </div>
+              <div className="factor-pill">
+                <span className="factor-dot">•</span>
+                <span><strong>Learning Differences:</strong> ADHD, dyslexia, dysgraphia, or executive dysfunction</span>
+              </div>
+              <div className="factor-pill">
+                <span className="factor-dot">•</span>
+                <span><strong>Family Stress & Transitions:</strong> Household changes, divorce, grief, or moves</span>
+              </div>
+              <div className="factor-pill">
+                <span className="factor-dot">•</span>
+                <span><strong>School Avoidance:</strong> Somatic complaints, morning distress, or attendance barriers</span>
+              </div>
+              <div className="factor-pill">
+                <span className="factor-dot">•</span>
+                <span><strong>Social Challenges:</strong> Peer friction, isolation, or communication barriers</span>
+              </div>
+            </div>
+
+            <div className="notice-box notice-sage" style={{ marginTop: '2rem' }}>
+              <Lightbulb size={20} className="notice-icon" />
+              <div className="notice-content">
+                <p>
+                  <strong>GroWell’s Advantage:</strong> While not every academic difficulty is a clinical disorder, understanding the interconnected nature of clinical, behavioral, family, and educational environments allows us to design supports that address root causes rather than just surface symptoms.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Advocacy Services Grid */}
-      <section className="section section-bg-sage" aria-labelledby="services-list-title">
+      <section className="section" aria-labelledby="services-list-title">
         <div className="container">
           <div className="section-header text-center">
-            <span className="badge badge-forest">Service Offerings</span>
-            <h2 id="services-list-title" className="section-title">How We Can Support Your Family</h2>
+            <span className="badge badge-terracotta">Service Offerings</span>
+            <h2 id="services-list-title" className="section-title">How We Support Families</h2>
             <p className="section-subtitle">
               Customized support packages tailored to where your family is in the educational planning process.
             </p>
@@ -193,7 +289,7 @@ export const AdvocacyPage: React.FC = () => {
       </section>
 
       {/* 5-Step Process */}
-      <section className="section" aria-labelledby="process-title">
+      <section className="section section-bg-muted" aria-labelledby="process-title">
         <div className="container">
           <div className="section-header text-center">
             <span className="badge badge-sand">Step-by-Step</span>
@@ -235,8 +331,56 @@ export const AdvocacyPage: React.FC = () => {
           margin-top: 1.5rem;
         }
 
-        .dual-card-icon {
-          margin-bottom: 1rem;
+        .experience-items-grid {
+          gap: 1.25rem;
+        }
+
+        .experience-item-card {
+          display: flex;
+          align-items: flex-start;
+          gap: 1rem;
+          padding: 1.5rem;
+        }
+
+        .exp-item-icon {
+          color: var(--color-sage);
+          flex-shrink: 0;
+          margin-top: 0.2rem;
+        }
+
+        .experience-item-card strong {
+          display: block;
+          font-size: 1.05rem;
+          color: var(--color-forest);
+          margin-bottom: 0.35rem;
+        }
+
+        .experience-item-card p {
+          font-size: 0.9rem;
+          line-height: 1.5;
+          margin: 0;
+        }
+
+        .intersect-factors-grid {
+          gap: 1rem;
+        }
+
+        .factor-pill {
+          display: flex;
+          align-items: flex-start;
+          gap: 0.6rem;
+          font-size: 0.92rem;
+          line-height: 1.5;
+          color: var(--color-text-main);
+          background-color: var(--color-linen);
+          padding: 0.85rem 1rem;
+          border-radius: var(--radius-md);
+        }
+
+        .factor-dot {
+          color: var(--color-terracotta);
+          font-size: 1.2rem;
+          line-height: 1;
         }
 
         .advocacy-item-card {
@@ -312,6 +456,10 @@ export const AdvocacyPage: React.FC = () => {
         }
 
         @media (max-width: 640px) {
+          .experience-items-grid,
+          .intersect-factors-grid {
+            grid-template-columns: 1fr;
+          }
           .timeline-step {
             flex-direction: column;
             gap: 0.75rem;

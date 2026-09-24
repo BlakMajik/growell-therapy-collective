@@ -12,7 +12,7 @@ interface ConsultationCTAProps {
 export const ConsultationCTA: React.FC<ConsultationCTAProps> = ({
   title = "Your Next Step Can Start With a Conversation.",
   subtitle = "Whether you're exploring therapy for yourself or your adolescent, or seeking experienced advocacy to navigate school challenges, we are here to support your growth.",
-  badge = "Free Initial Consultation"
+  badge = "Initial Consultation"
 }) => {
   return (
     <section className="consult-cta-section" aria-labelledby="consult-cta-heading">
@@ -26,7 +26,7 @@ export const ConsultationCTA: React.FC<ConsultationCTAProps> = ({
             <div className="consult-cta-highlights">
               <div className="highlight-item">
                 <ShieldCheck size={18} className="highlight-icon" />
-                <span>No pressure, confidential discussion</span>
+                <span>Confidential, supportive discussion</span>
               </div>
               <div className="highlight-item">
                 <HeartHandshake size={18} className="highlight-icon" />

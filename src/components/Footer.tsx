@@ -38,10 +38,10 @@ export const Footer: React.FC = () => {
             </p>
 
             <div className="footer-clinician-info">
-              <p className="clinician-name">{siteConfig.clinicianName}</p>
-              <p className="clinician-meta">{siteConfig.credentials.clinicalCounseling}</p>
-              <p className="clinician-meta">{siteConfig.credentials.educationLicense}</p>
-              <p className="clinician-meta">EMDR Certified • Reiki Level II</p>
+              <p className="clinician-name">{siteConfig.clinicianName}, {siteConfig.clinicianCredentials}</p>
+              <p className="clinician-meta">{siteConfig.exactLicenseDesignation} ({siteConfig.ncLicenseNumber})</p>
+              <p className="clinician-meta">{siteConfig.educationLicense}</p>
+              <p className="clinician-meta">EMDR • TF-CBT • CBT • Gottman Level I • Reiki II</p>
             </div>
           </div>
 
@@ -63,7 +63,7 @@ export const Footer: React.FC = () => {
           <div className="footer-col">
             <h4 className="footer-heading">Explore</h4>
             <ul className="footer-links">
-              <li><Link to="/about">Meet Jessica Mouzon</Link></li>
+              <li><Link to="/about">Meet Jessica N. Mouzon</Link></li>
               <li><Link to="/resources">Resource & Article Library</Link></li>
               <li><Link to="/faq">Frequently Asked Questions</Link></li>
               <li><Link to="/insurance-fees">Insurance & Fees</Link></li>
@@ -84,7 +84,7 @@ export const Footer: React.FC = () => {
           <div className="footer-col action-col">
             <h4 className="footer-heading">Get in Touch</h4>
             <p className="footer-contact-note">
-              Begin with a free, confidential consultation to determine how we can best support your journey.
+              Begin with a confidential consultation to determine how we can best support your journey.
             </p>
 
             <Link
@@ -116,7 +116,7 @@ export const Footer: React.FC = () => {
         {/* Legal & Disclaimers Strip */}
         <div className="footer-disclaimers">
           <p className="legal-disclaimer">
-            <strong>Legal & Professional Disclaimers:</strong> GroWell Therapy Collective LLC provides licensed mental health counseling and educational consultation. Educational advocacy services do not constitute legal advice or formal legal representation. Reiki Level II is an optional complementary wellness practice and is not presented as an equivalent substitute for evidence-based psychotherapy or medical intervention. This public website does not collect sensitive health information.
+            <strong>Legal & Professional Disclaimers:</strong> GroWell Therapy Collective LLC provides licensed mental health counseling and educational consultation. Educational advocacy services do not constitute legal advice or formal legal representation. Gottman Method Level I Training reflects completed professional training in Gottman Method Couples Therapy frameworks and does not imply full certification. Reiki Level II is an optional complementary wellness practice and is not presented as an equivalent substitute for evidence-based psychotherapy or medical intervention. This public website does not collect sensitive health information.
           </p>
         </div>
 

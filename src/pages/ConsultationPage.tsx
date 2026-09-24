@@ -65,7 +65,6 @@ export const ConsultationPage: React.FC = () => {
     setIsSubmitting(true);
     trackEvent('consultation_started', { service: formData.serviceInterest, format: formData.consultationFormat });
 
-    // Simulate safe API submission (extensible hook for future HIPAA CRM / Webhook)
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSubmitted(true);
@@ -81,18 +80,18 @@ export const ConsultationPage: React.FC = () => {
   return (
     <div className="consultation-page">
       <SEOHead
-        title="Start With a Conversation | Book a Free Consultation"
-        description="Schedule a complimentary initial consultation with Jessica Mouzon to discuss therapy or educational advocacy support. Privacy-safe and confidential."
+        title="Start With a Conversation | Book an Initial Consultation"
+        description="Schedule an initial consultation with Jessica N. Mouzon, MA, LCMHC to discuss therapy or educational advocacy support. Privacy-safe and confidential."
         canonicalPath="/consultation"
       />
 
       {/* Header Banner */}
       <section className="section section-bg-muted" style={{ paddingBottom: '2.5rem' }}>
         <div className="container container-narrow text-center">
-          <span className="badge badge-terracotta">Complimentary Consultation</span>
+          <span className="badge badge-terracotta">Initial Consultation</span>
           <h1 className="consultation-title">Start With a Conversation.</h1>
           <p className="lead">
-            Taking the first step toward therapy or educational advocacy can feel significant. We offer a free, 15-minute consultation to answer your questions, understand your needs, and explore whether GroWell is the right fit.
+            Taking the first step toward therapy or educational advocacy can feel significant. We offer an initial consultation to answer your questions, understand your needs, and explore whether GroWell is the right fit.
           </p>
         </div>
       </section>
@@ -102,7 +101,7 @@ export const ConsultationPage: React.FC = () => {
         <div className="container container-narrow">
           {/* What to Expect Card */}
           <div className="card card-tint what-to-expect-card">
-            <h3 className="expect-title">What Happens During the Consultation?</h3>
+            <h3 className="expect-title">What Happens During the Initial Consultation?</h3>
             <div className="grid-3 expect-grid">
               <div className="expect-item">
                 <CheckCircle2 size={18} className="expect-icon" />
@@ -128,7 +127,7 @@ export const ConsultationPage: React.FC = () => {
                 </div>
                 <h2>Thank You, {formData.firstName}!</h2>
                 <p className="lead" style={{ marginTop: '0.75rem', marginBottom: '1.5rem' }}>
-                  Your consultation request has been received. Jessica Mouzon will review your message and reach out via your preferred method ({formData.preferredContactMethod}) within 1–2 business days.
+                  Your consultation request has been received. Jessica N. Mouzon will review your message and reach out via your preferred method ({formData.preferredContactMethod}) within 1–2 business days.
                 </p>
 
                 <div className="success-summary-box">
@@ -335,8 +334,8 @@ export const ConsultationPage: React.FC = () => {
                       value={formData.consultationFormat}
                       onChange={handleInputChange}
                     >
-                      <option value="Phone">Phone Call (15 min)</option>
-                      <option value="Video">Secure Video Telehealth (15 min)</option>
+                      <option value="Phone">Phone Call</option>
+                      <option value="Video">Secure Video Telehealth</option>
                     </select>
                   </div>
 

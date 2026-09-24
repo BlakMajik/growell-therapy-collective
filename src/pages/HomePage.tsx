@@ -16,7 +16,9 @@ import {
   Palette, 
   Music, 
   Activity,
-  Layers
+  Layers,
+  Award,
+  BookOpen
 } from 'lucide-react';
 import { SEOHead } from '../components/SEOHead';
 import { ConsultationCTA } from '../components/ConsultationCTA';
@@ -28,8 +30,8 @@ export const HomePage: React.FC = () => {
   return (
     <div className="home-page">
       <SEOHead
-        title="Helping You Grow Through Life's Challenges"
-        description="Compassionate, individualized mental health counseling, trauma therapy (EMDR, TF-CBT), and K-12 educational & IEP advocacy for adolescents (11+), adults, and families."
+        title="Mental Health, Trauma & Educational Advocacy"
+        description="Compassionate mental health therapy, EMDR, TF-CBT, CBT, Gottman Method Level I frameworks, and K–12 IEP educational advocacy for adolescents (11+), adults, and families with Jessica N. Mouzon, MA, LCMHC."
         canonicalPath="/"
       />
 
@@ -45,6 +47,11 @@ export const HomePage: React.FC = () => {
             <h1 id="hero-title" className="hero-title">
               Helping You Grow Through Life’s Challenges.
             </h1>
+
+            <p className="hero-credential-line">
+              <strong>Jessica N. Mouzon, MA, LCMHC</strong>
+              <span className="hero-cred-sub">Licensed Clinical Mental Health Counselor | Exceptional Children's K–12 Educator | EMDR</span>
+            </p>
 
             <p className="lead hero-lead">
               GroWell Therapy Collective provides compassionate, individualized mental health support for adolescents (11+), adults, and families—combining evidence-based therapy, educational expertise, student advocacy, and whole-person care.
@@ -71,7 +78,7 @@ export const HomePage: React.FC = () => {
             <div className="hero-trust-indicators">
               <div className="trust-pill">
                 <CheckCircle2 size={16} className="trust-icon" />
-                <span>EMDR Certified</span>
+                <span>NC LCMHC #16006</span>
               </div>
               <div className="trust-pill">
                 <CheckCircle2 size={16} className="trust-icon" />
@@ -79,7 +86,7 @@ export const HomePage: React.FC = () => {
               </div>
               <div className="trust-pill">
                 <CheckCircle2 size={16} className="trust-icon" />
-                <span>Trauma-Informed Whole Person</span>
+                <span>Trauma-Informed & EMDR</span>
               </div>
             </div>
           </div>
@@ -123,11 +130,12 @@ export const HomePage: React.FC = () => {
               </div>
               <h3 className="path-card-title">Therapy & Mental Health</h3>
               <p className="path-card-desc">
-                Evidence-based psychotherapy for adolescents, adults, and families navigating trauma, anxiety, life transitions, emotional regulation, and stress.
+                Evidence-based psychotherapy for adolescents, adults, and families navigating trauma, anxiety, life transitions, emotional regulation, and relationship patterns.
               </p>
               <ul className="path-features-list">
                 <li>EMDR & Trauma-Informed Care</li>
                 <li>TF-CBT & Cognitive Behavioral Therapy</li>
+                <li>Gottman Method Level I Frameworks</li>
                 <li>Person-Centered Collaboration</li>
               </ul>
               <Link to="/therapy" className="path-card-link">
@@ -148,7 +156,7 @@ export const HomePage: React.FC = () => {
               <ul className="path-features-list">
                 <li>IEP & 504 Plan Navigation</li>
                 <li>School Meeting Preparation & Support</li>
-                <li>Educational Document Review</li>
+                <li>Educational Document & Evaluation Review</li>
               </ul>
               <Link to="/educational-advocacy" className="path-card-link">
                 <span>Explore Advocacy</span>
@@ -192,14 +200,16 @@ export const HomePage: React.FC = () => {
                 Therapy at GroWell is a collaborative partnership designed to foster nervous system regulation, self-compassion, and sustainable emotional resilience.
               </p>
               <p>
-                We specialize in supporting adolescents (approximately age 11+), adults, and families working through trauma, anxiety, academic pressures, and life adjustments. Rather than simply managing surface symptoms, we focus on identifying root causes and building practical tools for lasting change.
+                We specialize in supporting adolescents (approximately age 11+), adults, and families working through trauma, anxiety, academic pressures, relationship dynamics, and life adjustments. Rather than simply managing surface symptoms, we focus on identifying root causes and building practical tools for lasting change.
               </p>
 
               <div className="modality-badges-group">
-                <span className="modality-tag">EMDR Certified</span>
+                <span className="modality-tag">EMDR Therapy</span>
                 <span className="modality-tag">TF-CBT</span>
-                <span className="modality-tag">Cognitive Behavioral Therapy (CBT)</span>
+                <span className="modality-tag">CBT</span>
+                <span className="modality-tag">Gottman Method Level I Training</span>
                 <span className="modality-tag">Person-Centered</span>
+                <span className="modality-tag">Reiki Level II (Complementary)</span>
               </div>
 
               <div className="section-cta-row">
@@ -256,7 +266,7 @@ export const HomePage: React.FC = () => {
                 When Emotional, Behavioral, and Educational Needs Intersect.
               </h2>
               <p className="lead">
-                Jessica Mouzon brings a rare dual perspective: a licensed mental health clinician holding an Exceptional Children’s General Curriculum K–12 Educator License.
+                Jessica N. Mouzon brings a rare dual perspective: a Licensed Clinical Mental Health Counselor holding an Exceptional Children’s General Curriculum K–12 Educator License.
               </p>
               <p>
                 Navigating the school system can feel like learning a second language. When your child is facing academic stress, learning differences, ADHD, or emotional barriers, GroWell helps parents understand their rights, review school documentation, and advocate effectively.
@@ -304,7 +314,7 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* SECTION 5: MEET JESSICA MOUZON */}
+      {/* SECTION 5: MEET JESSICA N. MOUZON, MA, LCMHC */}
       <section className="section" aria-labelledby="jessica-heading">
         <div className="container">
           <div className="clinician-feature-box">
@@ -312,7 +322,7 @@ export const HomePage: React.FC = () => {
               <div className="clinician-portrait-wrap">
                 <img
                   src={getAssetUrl('/images/jessica-mouzon.jpg')}
-                  alt="Jessica Mouzon, Clinical Mental Health Counselor and Educational Advocate"
+                  alt="Jessica N. Mouzon, MA, LCMHC — Founder, Clinical Mental Health Counselor and Educational Advocate"
                   className="clinician-portrait"
                   loading="lazy"
                 />
@@ -321,14 +331,17 @@ export const HomePage: React.FC = () => {
               <div className="clinician-bio-wrap">
                 <span className="badge badge-sand">Meet Your Clinician & Advocate</span>
                 <h2 id="jessica-heading" className="clinician-name-title">
-                  Jessica Mouzon
+                  Jessica N. Mouzon, MA, LCMHC
                 </h2>
                 <p className="clinician-creds-line">
-                  Clinical Mental Health Counseling • Exceptional Children’s K–12 Educator • EMDR Certified
+                  Licensed Clinical Mental Health Counselor (NC #16006) • Exceptional Children's K–12 Educator • EMDR
                 </p>
 
                 <p>
-                  With approximately 11 years of professional experience across mental health counseling and educational environments, Jessica Mouzon founded GroWell Therapy Collective to provide a truly whole-person space where adolescents, adults, and families can find grounded support.
+                  Jessica brings more than a decade of experience across education and behavioral health settings. She founded GroWell Therapy Collective to provide a truly whole-person space where adolescents, adults, and families can find grounded, collaborative support.
+                </p>
+                <p>
+                  Her professional background spans special education, school-based mental health, outpatient counseling, intensive in-home services, educational program coordination, student advocacy, and interdisciplinary collaboration.
                 </p>
                 <p>
                   Jessica believes that effective healing is never one-size-fits-all. By honoring the complex interplay between emotional health, learning styles, family systems, and life experiences, she helps clients build meaningful insight, confidence, and self-advocacy.
@@ -336,16 +349,24 @@ export const HomePage: React.FC = () => {
 
                 <div className="credentials-summary-grid">
                   <div className="cred-badge-item">
-                    <span className="cred-title">~11 Years Experience</span>
-                    <span className="cred-desc">Mental health counseling & education</span>
+                    <span className="cred-title">MA, Clinical Mental Health Counseling</span>
+                    <span className="cred-desc">Wake Forest University (CACREP-Accredited)</span>
                   </div>
                   <div className="cred-badge-item">
-                    <span className="cred-title">EMDR Certified</span>
-                    <span className="cred-desc">Advanced trauma reprocessing</span>
+                    <span className="cred-title">Licensed LCMHC</span>
+                    <span className="cred-desc">North Carolina License #16006</span>
                   </div>
                   <div className="cred-badge-item">
-                    <span className="cred-title">K–12 Educator License</span>
-                    <span className="cred-desc">Exceptional Children's curriculum</span>
+                    <span className="cred-title">Exceptional Children's Educator</span>
+                    <span className="cred-desc">General Curriculum K–12 License</span>
+                  </div>
+                  <div className="cred-badge-item">
+                    <span className="cred-title">EMDR / TF-CBT / CBT</span>
+                    <span className="cred-desc">Evidence-based trauma & cognitive therapies</span>
+                  </div>
+                  <div className="cred-badge-item">
+                    <span className="cred-title">Gottman Method Level I Training</span>
+                    <span className="cred-desc">Relationship & communication frameworks</span>
                   </div>
                   <div className="cred-badge-item">
                     <span className="cred-title">Reiki Level II</span>
@@ -392,23 +413,23 @@ export const HomePage: React.FC = () => {
               <div className="pillar-step">02</div>
               <h3 className="pillar-title">Connect</h3>
               <p className="pillar-desc">
-                We establish a safe, transparent, and collaborative therapeutic relationship centered on mutual respect, empathy, and safety.
+                We establish an authentic, transparent, and collaborative therapeutic relationship centered on mutual respect and safety.
               </p>
             </div>
 
             <div className="card pillar-card">
               <div className="pillar-step">03</div>
-              <h3 className="pillar-title">Grow</h3>
+              <h3 className="pillar-title">Integrate</h3>
               <p className="pillar-desc">
-                We apply evidence-based strategies (EMDR, CBT, TF-CBT) alongside personalized modalities to foster meaningful internal progress.
+                We consider relevant clinical, family, educational, and environmental factors together to shape a cohesive path forward.
               </p>
             </div>
 
             <div className="card pillar-card">
               <div className="pillar-step">04</div>
-              <h3 className="pillar-title">Thrive</h3>
+              <h3 className="pillar-title">Grow</h3>
               <p className="pillar-desc">
-                You develop practical tools, nervous system regulation, self-advocacy skills, and support systems that extend into daily life.
+                You develop practical tools, insight, nervous system regulation, and self-advocacy skills that support meaningful daily progress.
               </p>
             </div>
           </div>
@@ -498,7 +519,7 @@ export const HomePage: React.FC = () => {
                 In-person sessions in a warm, welcoming, sunlit office environment designed for connection, comfort, and focus.
               </p>
               <div className="hybrid-location-tag">
-                Serving {siteConfig.contact.city}
+                North Carolina
               </div>
             </div>
 
@@ -555,8 +576,23 @@ export const HomePage: React.FC = () => {
         }
 
         .hero-title {
-          margin-bottom: 1.25rem;
+          margin-bottom: 0.85rem;
           letter-spacing: -0.025em;
+        }
+
+        .hero-credential-line {
+          font-size: 1.02rem;
+          color: var(--color-forest);
+          margin-bottom: 1.25rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.2rem;
+        }
+
+        .hero-cred-sub {
+          font-size: 0.88rem;
+          color: var(--color-sage);
+          font-weight: 600;
         }
 
         .hero-lead {
@@ -842,7 +878,7 @@ export const HomePage: React.FC = () => {
 
         .clinician-name-title {
           font-family: var(--font-serif);
-          font-size: 2.25rem;
+          font-size: 2.15rem;
           margin-top: 0.5rem;
           margin-bottom: 0.25rem;
         }
@@ -871,7 +907,7 @@ export const HomePage: React.FC = () => {
 
         .cred-title {
           font-weight: 700;
-          font-size: 0.92rem;
+          font-size: 0.9rem;
           color: var(--color-forest);
         }
 

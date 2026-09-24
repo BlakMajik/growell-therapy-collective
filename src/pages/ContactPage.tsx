@@ -69,7 +69,7 @@ export const ContactPage: React.FC = () => {
   return (
     <div className="contact-page">
       <SEOHead
-        title="Contact GroWell Therapy Collective | Jessica Mouzon"
+        title="Contact GroWell Therapy Collective | Jessica N. Mouzon"
         description="Get in touch with GroWell Therapy Collective. In-person therapy in North Carolina and secure telehealth across the state."
         canonicalPath="/contact"
       />
@@ -78,7 +78,7 @@ export const ContactPage: React.FC = () => {
       <section className="section section-bg-muted" style={{ paddingBottom: '3rem' }}>
         <div className="container container-narrow text-center">
           <span className="badge badge-sage">Get In Touch</span>
-          <h1 className="contact-title">Contact & Locations</h1>
+          <h1 className="contact-title">Contact & Practice Locations</h1>
           <p className="lead">
             We are here to answer your questions and help you explore whether therapy, educational advocacy, or parent consultation is right for your family.
           </p>
@@ -157,7 +157,7 @@ export const ContactPage: React.FC = () => {
 
                 {/* Consultation Banner Callout */}
                 <div className="consult-callout-box">
-                  <h4>Ready to schedule a free 15-min consultation?</h4>
+                  <h4>Ready to schedule an initial consultation?</h4>
                   <p>Book directly through our streamlined consultation scheduling form.</p>
                   <Link to="/consultation" className="btn btn-primary btn-sm" style={{ marginTop: '0.75rem' }}>
                     <span>Book a Consultation</span>
@@ -327,7 +327,7 @@ export const ContactPage: React.FC = () => {
         show={showToast}
         type="success"
         title="Message Sent"
-        message="Thank you! Jessica Mouzon will respond within 1–2 business days."
+        message="Thank you! Jessica N. Mouzon will respond within 1–2 business days."
         onClose={() => setShowToast(false)}
       />
 

@@ -11,7 +11,9 @@ import {
   CheckCircle2, 
   Shield, 
   Activity,
-  SmilePlus
+  SmilePlus,
+  HeartHandshake,
+  Sparkle
 } from 'lucide-react';
 import { SEOHead } from '../components/SEOHead';
 import { ConsultationCTA } from '../components/ConsultationCTA';
@@ -22,8 +24,8 @@ export const TherapyPage: React.FC = () => {
   return (
     <div className="therapy-page">
       <SEOHead
-        title="Therapy Services & Clinical Modalities"
-        description="Individual adolescent therapy (11+), adult counseling, trauma recovery, and family support using EMDR, TF-CBT, CBT, and Person-Centered Therapy."
+        title="Therapy for Adolescents & Adults"
+        description="Individual adolescent therapy (11+), adult counseling, trauma recovery, and family support using EMDR, TF-CBT, CBT, Person-Centered Therapy, and Gottman Method Level I frameworks."
         canonicalPath="/therapy"
       />
 
@@ -59,7 +61,7 @@ export const TherapyPage: React.FC = () => {
             <span className="badge badge-terracotta">Who We Help</span>
             <h2 id="service-areas-heading" className="section-title">Our Core Service Areas</h2>
             <p className="section-subtitle">
-              We may be able to help with trauma, anxiety, stress, emotional regulation, academic pressure, and life transitions.
+              We provide tailored support for adolescents, adults, parents, and families across North Carolina.
             </p>
           </div>
 
@@ -139,7 +141,7 @@ export const TherapyPage: React.FC = () => {
                   <ShieldCheck size={26} />
                 </div>
                 <div>
-                  <span className="badge badge-sand">Specialized Modality</span>
+                  <span className="badge badge-sand">Trauma-Informed</span>
                   <h3 className="service-category-title">Trauma-Informed & PTSD Care</h3>
                 </div>
               </div>
@@ -207,10 +209,10 @@ export const TherapyPage: React.FC = () => {
       <section className="section section-bg-sage" aria-labelledby="modalities-heading">
         <div className="container">
           <div className="section-header text-center">
-            <span className="badge badge-forest">Evidence-Based Approaches</span>
-            <h2 id="modalities-heading" className="section-title">Our Therapeutic Modalities</h2>
+            <span className="badge badge-forest">Evidence-Based & Clinical Approaches</span>
+            <h2 id="modalities-heading" className="section-title">Therapeutic Modalities & Clinical Frameworks</h2>
             <p className="section-subtitle">
-              We integrate proven clinical methodologies with a warm, human-centered framework.
+              We integrate proven clinical methodologies with a warm, human-centered framework to support meaningful progress.
             </p>
           </div>
 
@@ -219,7 +221,7 @@ export const TherapyPage: React.FC = () => {
             <div className="card modality-card">
               <div className="modality-card-top">
                 <div className="modality-tag-group">
-                  <span className="badge badge-terracotta">Certified Modality</span>
+                  <span className="badge badge-terracotta">Clinical Modality</span>
                   <span className="badge badge-sand">Trauma Reprocessing</span>
                 </div>
                 <h3>Eye Movement Desensitization and Reprocessing (EMDR)</h3>
@@ -272,6 +274,32 @@ export const TherapyPage: React.FC = () => {
                 Rooted in unconditional positive regard, genuine authenticity, and deep empathy, Person-Centered Therapy creates a secure, non-judgmental environment. Rather than treating you as a passive patient, we collaborate with you as an active partner in your self-directed growth.
               </p>
             </div>
+
+            {/* Gottman Method Level I Training */}
+            <div className="card modality-card">
+              <div className="modality-card-top">
+                <div className="modality-tag-group">
+                  <span className="badge badge-terracotta">Relational Framework</span>
+                </div>
+                <h3>Gottman Method Level I Training</h3>
+              </div>
+              <p className="modality-p">
+                Jessica has completed Level I training in the Gottman Method, providing additional frameworks for understanding relationship dynamics, communication patterns, emotional connection, and conflict. These evidence-informed principles help clients recognize recurring relational cycles, deepen mutual attunement, and establish constructive, lasting communication habits.
+              </p>
+            </div>
+
+            {/* Complementary: Reiki Level II */}
+            <div className="card modality-card" style={{ borderLeft: '4px solid var(--color-sand)' }}>
+              <div className="modality-card-top">
+                <div className="modality-tag-group">
+                  <span className="badge badge-sand">Complementary Wellness</span>
+                </div>
+                <h3>Reiki Level II (Optional Complementary Support)</h3>
+              </div>
+              <p className="modality-p">
+                Reiki Level II is offered strictly as an optional complementary wellness practice focused on relaxation and nervous system grounding. It is not presented as an equivalent substitute for clinical psychotherapy or medical treatment, but can serve as a supportive relaxation tool when therapeutically appropriate.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -279,7 +307,7 @@ export const TherapyPage: React.FC = () => {
       {/* Consultation Conversion CTA */}
       <ConsultationCTA
         title="Ready to Begin Your Therapy Journey?"
-        subtitle="Schedule a free consultation to discuss your goals, ask questions about our modalities, and find the right path forward."
+        subtitle="Schedule a consultation to discuss your goals, ask questions about our modalities, and find the right path forward."
       />
 
       <style>{`
@@ -405,6 +433,10 @@ export const TherapyPage: React.FC = () => {
           font-size: 0.98rem;
           line-height: 1.65;
           margin-bottom: 1rem;
+        }
+
+        .modality-link-row {
+          margin-top: 0.5rem;
         }
 
         .modality-deep-link {

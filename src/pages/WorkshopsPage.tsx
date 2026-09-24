@@ -9,10 +9,13 @@ import {
   Sparkles, 
   ArrowRight,
   ShieldCheck,
-  AlertTriangle
+  AlertTriangle,
+  Presentation,
+  HeartHandshake
 } from 'lucide-react';
 import { SEOHead } from '../components/SEOHead';
 import { Toast } from '../components/Toast';
+import { siteConfig } from '../config/siteConfig';
 import { trackEvent } from '../services/analytics';
 
 export const WorkshopsPage: React.FC = () => {
@@ -23,7 +26,7 @@ export const WorkshopsPage: React.FC = () => {
     phone: '',
     orgType: 'School / District',
     estimatedAudience: '20–50 People',
-    topicInterest: 'Trauma-Informed Classroom Strategies',
+    topicInterest: 'Trauma-Informed Support in Educational Settings',
     eventFormat: 'In-Person',
     targetDate: '',
     details: '',
@@ -61,56 +64,119 @@ export const WorkshopsPage: React.FC = () => {
     }, 750);
   };
 
+  const audienceGroups = [
+    { name: "K–12 Schools & School Districts", icon: GraduationCap, desc: "Teacher professional development, counselor coaching, and classroom de-escalation strategies." },
+    { name: "Parent Organizations & PTAs", icon: Users, desc: "Accessible workshops on IEP navigation, 504 plans, and teen mental health advocacy." },
+    { name: "Youth Organizations & Mentorship Programs", icon: HeartHandshake, desc: "Equipping staff with trauma-informed frameworks and emotional regulation tools." },
+    { name: "Nonprofits & Community Organizations", icon: Building2, desc: "Community mental health literacy, family-school collaboration, and youth support." },
+    { name: "Mental Health & Clinical Organizations", icon: BookOpen, desc: "Cross-disciplinary training on aligning therapy with special education workflows." },
+    { name: "Professional & Corporate Groups", icon: Presentation, desc: "Workplace burnout prevention, supporting neurodivergent employees, and stress management." },
+  ];
+
   const workshopTopics = [
     {
-      title: "Trauma-Informed School Environments",
-      audience: "Teachers, Administrators & School Staff",
-      desc: "Understanding the neurobiology of trauma and stress in adolescents, with practical de-escalation, sensory accommodation, and nervous-system calming tools for the classroom."
+      category: "Trauma & Emotional Support",
+      title: "Trauma-Informed Support in School & Community Settings",
+      desc: "Understanding the neurobiology of trauma and stress in adolescents, with actionable de-escalation, sensory accommodation, and nervous-system calming tools."
     },
     {
-      title: "Demystifying IEPs & 504 Plans for Parents",
-      audience: "PTAs, Parent Coalitions & Community Groups",
-      desc: "An empowering, accessible breakdown of special education rights, how to read evaluations, and how to build positive collaborative partnerships with school teams."
+      category: "Educational Systems",
+      title: "Understanding IEP Processes & Special Education Planning",
+      desc: "An empowering, demystified breakdown of special education rights, evaluation data interpretation, measurable goal design, and collaborative school meetings."
     },
     {
-      title: "Adolescent Mental Health & Emotional Regulation",
-      audience: "Youth Mentors, Community Leaders & Counselors",
-      desc: "Recognizing early warning signs of anxiety, depression, and executive dysfunction in youth, and implementing neurodivergent-affirming communication strategies."
+      category: "Mental Health Literacy",
+      title: "Mental Health & School Performance",
+      desc: "Exploring the neurological intersection between emotional regulation, anxiety, executive dysfunction, and classroom participation."
     },
     {
-      title: "Bridging Counseling & Classroom Accommodations",
-      audience: "Mental Health Clinicians & Educational Specialists",
-      desc: "A professional development workshop on aligning clinical outpatient therapy goals with school-based accommodations and 504 planning."
+      category: "Behavior & Classroom Strategy",
+      title: "Supporting Students With Emotional and Behavioral Needs",
+      desc: "Designing proactive, positive behavior support plans and accommodation workflows for neurodivergent and dysregulated learners."
+    },
+    {
+      category: "Family Advocacy",
+      title: "Parent Advocacy & Collaborative School Communication",
+      desc: "Practical frameworks for families to build constructive, high-trust partnerships with teachers, administrators, and multidisciplinary teams."
+    },
+    {
+      category: "Interdisciplinary Care",
+      title: "Family-School-Provider Collaboration",
+      desc: "Bridging outpatient psychotherapy, classroom instruction, and home routines to create consistent wrap-around care for children and teens."
+    },
+    {
+      category: "Special Education Development",
+      title: "Supporting Exceptional Children: Educator Coaching",
+      desc: "Professional development for special education and general education teachers on differentiated instruction, accommodations, and IEP workflows."
+    },
+    {
+      category: "Behavior Support",
+      title: "Behavior Support & Educational Planning",
+      desc: "Functional behavior assessments, accommodation feasibility, and trauma-sensitive interventions for diverse school environments."
     }
   ];
 
   return (
     <div className="workshops-page">
       <SEOHead
-        title="Workshops & Organizational Training | Mental Health & Education"
-        description="Professional development, school staff training, and parent workshops on trauma-informed practices and special education advocacy by Jessica Mouzon."
+        title="Workshops & Professional Education"
+        description="Professional development, school staff training, and parent education workshops on trauma-informed practices, IEP processes, and adolescent mental health by Jessica N. Mouzon, MA, LCMHC."
         canonicalPath="/workshops"
       />
 
       {/* Hero */}
       <section className="section section-bg-muted" style={{ paddingBottom: '3rem' }}>
         <div className="container container-narrow text-center">
-          <span className="badge badge-terracotta">Community & Professional Training</span>
-          <h1 className="workshops-title">Workshops & Speaking Engagements</h1>
+          <span className="badge badge-terracotta">Community & Professional Education</span>
+          <h1 className="workshops-title">Workshops & Professional Training</h1>
           <p className="lead">
-            Engaging, evidence-based presentations and professional development designed for schools, parent organizations, youth programs, and community leaders.
+            Engaging, evidence-based presentations, staff professional development, and community seminars led by Jessica N. Mouzon, MA, LCMHC.
           </p>
+          <div style={{ marginTop: '1.5rem' }}>
+            <a href="#request-form" className="btn btn-primary btn-lg">
+              <span>Request a Workshop</span>
+              <ArrowRight size={18} />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Background & Positioning */}
+      <section className="section" style={{ paddingTop: '2.5rem' }}>
+        <div className="container container-narrow">
+          <div className="text-center" style={{ marginBottom: '2.5rem' }}>
+            <span className="badge badge-sage">Experienced Facilitation</span>
+            <h2 className="section-title">Bridging Clinical Insights & Educational Experience</h2>
+            <p className="section-subtitle">
+              Jessica brings an extensive professional history spanning clinician onboarding, psychoeducational resource development, community programming, special education teacher coaching, and institutional program coordination.
+            </p>
+          </div>
+
+          <div className="audience-groups-grid grid-3">
+            {audienceGroups.map((grp, idx) => {
+              const Icon = grp.icon;
+              return (
+                <div key={idx} className="card audience-group-card">
+                  <div className="audience-icon-wrap">
+                    <Icon size={24} />
+                  </div>
+                  <h4>{grp.name}</h4>
+                  <p>{grp.desc}</p>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
 
       {/* Featured Topics Grid */}
-      <section className="section" style={{ paddingTop: '2.5rem' }}>
+      <section className="section section-bg-sage" style={{ paddingTop: '3.5rem' }}>
         <div className="container">
           <div className="section-header text-center">
-            <span className="badge badge-sage">Popular Programs</span>
-            <h2 className="section-title">Core Workshop Topics</h2>
+            <span className="badge badge-forest">Topic Catalog</span>
+            <h2 className="section-title">Potential Workshop & Training Topics</h2>
             <p className="section-subtitle">
-              All presentations can be tailored for keynote speeches, half-day professional development, or interactive evening parent seminars.
+              Presentations can be tailored for keynote addresses, half-day professional development workshops, or interactive evening parent seminars.
             </p>
           </div>
 
@@ -118,7 +184,7 @@ export const WorkshopsPage: React.FC = () => {
             {workshopTopics.map((topic, idx) => (
               <div key={idx} className="card card-hover topic-card">
                 <div className="topic-badge-row">
-                  <span className="badge badge-forest">{topic.audience}</span>
+                  <span className="badge badge-sand">{topic.category}</span>
                 </div>
                 <h3 className="topic-card-title">{topic.title}</h3>
                 <p className="topic-card-desc">{topic.desc}</p>
@@ -129,16 +195,16 @@ export const WorkshopsPage: React.FC = () => {
       </section>
 
       {/* Inquiry Form */}
-      <section className="section section-bg-sage" id="request-form" aria-labelledby="inquiry-heading">
+      <section className="section" id="request-form" aria-labelledby="inquiry-heading">
         <div className="container container-narrow">
           <div className="card inquiry-form-card">
             <div className="text-center" style={{ marginBottom: '2rem' }}>
               <span className="badge badge-sand">Organizational Inquiries</span>
               <h2 id="inquiry-heading" className="section-title" style={{ marginTop: '0.5rem' }}>
-                Request a Workshop or Presentation
+                Request a Workshop
               </h2>
               <p className="section-subtitle">
-                Share a few details about your organization and event goals to check availability and request a custom proposal.
+                Share details about your organization, target audience, and event goals to check availability and receive a tailored proposal.
               </p>
             </div>
 
@@ -149,7 +215,7 @@ export const WorkshopsPage: React.FC = () => {
                 </div>
                 <h2>Thank You, {formData.contactName}!</h2>
                 <p className="lead" style={{ marginTop: '0.75rem', marginBottom: '1.5rem' }}>
-                  Your organizational workshop inquiry for <strong>{formData.orgName}</strong> has been received. We will be in touch with proposal options within 2 business days.
+                  Your workshop request for <strong>{formData.orgName}</strong> has been received. Jessica will review your event details and respond within 2 business days.
                 </p>
                 <button
                   type="button"
@@ -178,7 +244,7 @@ export const WorkshopsPage: React.FC = () => {
                       id="orgName"
                       name="orgName"
                       className="form-control"
-                      placeholder="e.g. Oakridge Middle School PTA"
+                      placeholder="e.g. Oakridge High School PTA"
                       value={formData.orgName}
                       onChange={handleInputChange}
                       required
@@ -194,7 +260,7 @@ export const WorkshopsPage: React.FC = () => {
                       id="contactName"
                       name="contactName"
                       className="form-control"
-                      placeholder="e.g. David Vance, Principal"
+                      placeholder="e.g. Rachel Miller, Program Director"
                       value={formData.contactName}
                       onChange={handleInputChange}
                       required
@@ -212,7 +278,7 @@ export const WorkshopsPage: React.FC = () => {
                       id="email"
                       name="email"
                       className="form-control"
-                      placeholder="contact@school.org"
+                      placeholder="contact@organization.org"
                       value={formData.email}
                       onChange={handleInputChange}
                       required
@@ -246,9 +312,10 @@ export const WorkshopsPage: React.FC = () => {
                     >
                       <option value="School / District">K–12 School / District</option>
                       <option value="Parent Group / PTA">Parent Group / PTA</option>
-                      <option value="Nonprofit / Youth Program">Nonprofit / Youth Program</option>
-                      <option value="Clinical Practice">Clinical Practice</option>
-                      <option value="Other Organization">Other Organization</option>
+                      <option value="Youth Organization">Youth Organization / Nonprofit</option>
+                      <option value="Community Organization">Community Organization</option>
+                      <option value="Mental Health Organization">Mental Health Organization</option>
+                      <option value="Professional Group">Professional Group</option>
                     </select>
                   </div>
 
@@ -260,10 +327,10 @@ export const WorkshopsPage: React.FC = () => {
                       value={formData.estimatedAudience}
                       onChange={handleInputChange}
                     >
-                      <option value="Under 20 People">Under 20 People</option>
-                      <option value="20–50 People">20–50 People</option>
-                      <option value="50–150 People">50–150 People</option>
-                      <option value="150+ Keynote">150+ Keynote / Assembly</option>
+                      <option value="Under 20 People">Small Team (Under 20)</option>
+                      <option value="20–50 People">Workshop (20–50 People)</option>
+                      <option value="50–150 People">Large Seminar (50–150 People)</option>
+                      <option value="150+ Keynote">Keynote / Assembly (150+)</option>
                     </select>
                   </div>
 
@@ -283,6 +350,30 @@ export const WorkshopsPage: React.FC = () => {
                 </div>
 
                 <div className="form-group">
+                  <label className="form-label" htmlFor="topicInterest">
+                    Primary Topic of Interest
+                  </label>
+                  <select
+                    id="topicInterest"
+                    name="topicInterest"
+                    className="form-control"
+                    value={formData.topicInterest}
+                    onChange={handleInputChange}
+                  >
+                    <option value="Trauma-Informed Support in Educational Settings">Trauma-Informed Support</option>
+                    <option value="Mental Health & School Performance">Mental Health & School Performance</option>
+                    <option value="Understanding IEP Processes">Understanding IEP Processes</option>
+                    <option value="Supporting Students With Emotional and Behavioral Needs">Supporting Students With Emotional & Behavioral Needs</option>
+                    <option value="Parent Advocacy & School Collaboration">Parent Advocacy & School Collaboration</option>
+                    <option value="Mental Health Literacy">Mental Health Literacy</option>
+                    <option value="Family-School-Provider Collaboration">Family-School-Provider Collaboration</option>
+                    <option value="Supporting Exceptional Children">Supporting Exceptional Children</option>
+                    <option value="Behavior Support & Educational Planning">Behavior Support & Educational Planning</option>
+                    <option value="Custom Topic">Custom Topic / Multi-Day Program</option>
+                  </select>
+                </div>
+
+                <div className="form-group">
                   <label className="form-label" htmlFor="details">
                     Tell us about your event and goals
                   </label>
@@ -290,7 +381,7 @@ export const WorkshopsPage: React.FC = () => {
                     id="details"
                     name="details"
                     className="form-control"
-                    placeholder="Provide details such as desired date ranges, key objectives for your audience, or custom topic ideas..."
+                    placeholder="Provide details such as desired dates, key objectives for your attendees, or specific topics you'd like highlighted..."
                     rows={3}
                     value={formData.details}
                     onChange={handleInputChange}
@@ -303,7 +394,7 @@ export const WorkshopsPage: React.FC = () => {
                   disabled={isSubmitting}
                   style={{ marginTop: '1.25rem' }}
                 >
-                  {isSubmitting ? 'Sending Request...' : 'Submit Workshop Request'}
+                  {isSubmitting ? 'Sending Request...' : 'Request a Workshop'}
                 </button>
               </form>
             )}
@@ -326,26 +417,60 @@ export const WorkshopsPage: React.FC = () => {
           margin-bottom: 1rem;
         }
 
-        .topics-grid {
-          gap: 2rem;
+        .audience-groups-grid {
+          gap: 1.25rem;
         }
 
-        .topic-card {
-          padding: 2.5rem 2.25rem;
+        .audience-group-card {
+          padding: 1.75rem 1.5rem;
+          display: flex;
+          flex-direction: column;
         }
 
-        .topic-badge-row {
+        .audience-icon-wrap {
+          width: 46px;
+          height: 46px;
+          border-radius: var(--radius-md);
+          background-color: var(--color-sage-tint);
+          color: var(--color-sage);
+          display: flex;
+          align-items: center;
+          justify-content: center;
           margin-bottom: 1rem;
         }
 
-        .topic-card-title {
-          font-size: 1.35rem;
+        .audience-group-card h4 {
+          font-size: 1.05rem;
           color: var(--color-forest);
+          margin-bottom: 0.35rem;
+        }
+
+        .audience-group-card p {
+          font-size: 0.88rem;
+          line-height: 1.5;
+          margin: 0;
+        }
+
+        .topics-grid {
+          gap: 1.75rem;
+        }
+
+        .topic-card {
+          padding: 2.25rem 2rem;
+        }
+
+        .topic-badge-row {
           margin-bottom: 0.75rem;
         }
 
+        .topic-card-title {
+          font-size: 1.25rem;
+          color: var(--color-forest);
+          margin-bottom: 0.65rem;
+        }
+
         .topic-card-desc {
-          font-size: 0.95rem;
+          font-size: 0.92rem;
           line-height: 1.6;
           margin: 0;
         }
@@ -375,6 +500,9 @@ export const WorkshopsPage: React.FC = () => {
         @media (max-width: 768px) {
           .inquiry-form-card {
             padding: 2rem 1.5rem;
+          }
+          .audience-groups-grid {
+            grid-template-columns: 1fr;
           }
         }
       `}</style>

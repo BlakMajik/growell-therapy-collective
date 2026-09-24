@@ -9,8 +9,14 @@ export interface SiteConfig {
   practiceName: string;
   tagline: string;
   clinicianName: string;
+  clinicianCredentials: string;
   clinicianTitle: string;
-  experienceYears: string;
+  exactLicenseDesignation: string;
+  ncLicenseNumber: string;
+  graduateEducation: string;
+  graduateAccreditation: string;
+  educationLicense: string;
+  experienceSummary: string;
   
   // Third-Party Client Portal URL
   // When configured, buttons throughout the site seamlessly redirect existing clients to the external EHR/portal.
@@ -31,12 +37,15 @@ export interface SiteConfig {
   // Professional Credentials & Licenses
   credentials: {
     clinicalCounseling: string;
-    exactLicenseDesignation: string; // [TO BE CONFIRMED]
-    ncLicenseNumber: string;         // [TO BE ADDED]
-    educationLicense: string;        // Exceptional Children's General Curriculum K-12
-    emdrCertified: string;
-    reikiTraining: string;          // Reiki Level II (Complementary)
-    additionalTraining: string;     // [EDITABLE]
+    exactLicenseDesignation: string;
+    ncLicenseNumber: string;
+    graduateEducation: string;
+    graduateAccreditation: string;
+    educationLicense: string;
+    emdrTraining: string;
+    gottmanTraining: string;
+    reikiTraining: string;
+    additionalTraining: string;
   };
 
   // Clinical & Complementary Modalities
@@ -81,9 +90,15 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   practiceName: "GroWell Therapy Collective LLC",
   tagline: "Helping You Grow Through Life's Challenges",
-  clinicianName: "Jessica Mouzon",
-  clinicianTitle: "Mental Health Counselor & Educational Specialist",
-  experienceYears: "Approximately 11 Years of Professional Experience",
+  clinicianName: "Jessica N. Mouzon",
+  clinicianCredentials: "MA, LCMHC",
+  clinicianTitle: "Licensed Clinical Mental Health Counselor & Educational Specialist",
+  exactLicenseDesignation: "Licensed Clinical Mental Health Counselor (LCMHC)",
+  ncLicenseNumber: "NC LCMHC License #16006",
+  graduateEducation: "Master of Arts in Counseling, Clinical Mental Health Track — Wake Forest University",
+  graduateAccreditation: "CACREP-accredited counseling program",
+  educationLicense: "Exceptional Children's General Curriculum K–12 Educator License",
+  experienceSummary: "More than a decade of experience across education and behavioral health settings",
 
   // Set the external EHR / Client Portal URL here when ready (e.g. "https://portal.simplepractice.com/growell")
   clientPortalUrl: "", 
@@ -100,12 +115,15 @@ export const siteConfig: SiteConfig = {
 
   credentials: {
     clinicalCounseling: "Clinical Mental Health Counseling",
-    exactLicenseDesignation: "[EXACT LICENSE DESIGNATION TO BE CONFIRMED]",
-    ncLicenseNumber: "[NC LICENSE NUMBER TO BE ADDED]",
+    exactLicenseDesignation: "Licensed Clinical Mental Health Counselor (LCMHC)",
+    ncLicenseNumber: "NC LCMHC License #16006",
+    graduateEducation: "Master of Arts in Counseling, Clinical Mental Health Track — Wake Forest University",
+    graduateAccreditation: "CACREP-accredited counseling program",
     educationLicense: "Exceptional Children's General Curriculum K–12 Educator License",
-    emdrCertified: "EMDR Certified Therapist",
-    reikiTraining: "Reiki Level II Practitioner (Complementary Wellness)",
-    additionalTraining: "Trauma-Focused Cognitive Behavioral Therapy (TF-CBT) & Person-Centered Modalities",
+    emdrTraining: "Eye Movement Desensitization and Reprocessing (EMDR)",
+    gottmanTraining: "Gottman Method Level I Training",
+    reikiTraining: "Reiki Level II (Complementary Wellness)",
+    additionalTraining: "Trauma-Focused Cognitive Behavioral Therapy (TF-CBT), Cognitive Behavioral Therapy (CBT) & Person-Centered Therapy",
   },
 
   modalities: {
@@ -136,6 +154,13 @@ export const siteConfig: SiteConfig = {
         name: "Person-Centered Therapy (PCT)",
         shortDesc: "A foundational humanistic approach centered on unconditional positive regard, deep empathy, and genuine collaboration.",
         fullDesc: "Person-Centered Therapy creates a secure, non-judgmental environment where clients can discover their own innate resilience, values, and capacity for self-directed growth.",
+        isEvidenceBased: true,
+      },
+      {
+        id: "gottman",
+        name: "Gottman Method Level I Training",
+        shortDesc: "Research-informed relationship frameworks focusing on communication patterns, emotional connection, and conflict resolution dynamics.",
+        fullDesc: "Jessica has completed Level I Training in Gottman Method Couples Therapy, providing evidence-informed frameworks for understanding relationship dynamics, communication patterns, emotional connection, and conflict patterns.",
         isEvidenceBased: true,
       },
     ],

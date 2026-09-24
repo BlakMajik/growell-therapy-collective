@@ -1,7 +1,10 @@
 # GroWell Therapy Collective LLC — Production Website
 
-**Clinician & Owner:** Jessica Mouzon  
-**Core Practice Areas:** Clinical Mental Health Therapy (EMDR, TF-CBT, CBT, Person-Centered) • Exceptional Children's K–12 Educational Advocacy • Whole-Person Wellness
+**Clinician & Founder:** Jessica N. Mouzon, MA, LCMHC  
+**Professional Designation:** Licensed Clinical Mental Health Counselor (LCMHC) — NC LCMHC License #16006  
+**Graduate Education:** Master of Arts in Counseling, Clinical Mental Health Track — Wake Forest University (CACREP-accredited)  
+**Educational Credential:** Exceptional Children's General Curriculum K–12 Educator License  
+**Core Practice Areas:** Clinical Mental Health Therapy (EMDR, TF-CBT, CBT, Person-Centered Therapy, Gottman Method Level I Training) • Exceptional Children's K–12 Educational & IEP Advocacy • Whole-Person Wellness (Reiki Level II)
 
 ---
 
@@ -33,13 +36,13 @@ The site will run locally at `http://localhost:5173`.
 ```bash
 npm run build
 ```
-This produces an optimized, static production bundle in the `/dist` directory, ready to deploy to any modern hosting platform (Netlify, Vercel, Cloudflare Pages, AWS Amplify, etc.).
+This produces an optimized, static production bundle in the `/dist` directory, ready to deploy to any modern hosting platform (GitHub Pages, Netlify, Vercel, Cloudflare Pages, AWS Amplify, etc.).
 
 ---
 
 ## ⚙️ Centralized Configuration (`src/config/siteConfig.ts`)
 
-All practice data, credentials, pending license numbers, contact details, and third-party portal integrations are managed in a single, well-documented file:
+All practice data, verified credentials, license numbers, graduate education, contact details, and third-party portal integrations are managed in a single, well-documented file:
 
 👉 `src/config/siteConfig.ts`
 
@@ -51,31 +54,31 @@ clientPortalUrl: "https://portal.simplepractice.com/growell",
 ```
 *Note: If left empty (`""`), the `/client-portal` page automatically displays a helpful "Coming Soon" status with direct practice contact options.*
 
-### 2. How to Update Contact & Location Details
-In `siteConfig.ts`, update the `contact` object:
+### 2. Verified Clinician & Credential Settings
+In `siteConfig.ts`, the clinician and credential configuration is structured as:
+```typescript
+clinicianName: "Jessica N. Mouzon",
+clinicianCredentials: "MA, LCMHC",
+clinicianTitle: "Licensed Clinical Mental Health Counselor & Educational Specialist",
+exactLicenseDesignation: "Licensed Clinical Mental Health Counselor (LCMHC)",
+ncLicenseNumber: "NC LCMHC License #16006",
+graduateEducation: "Master of Arts in Counseling, Clinical Mental Health Track — Wake Forest University",
+graduateAccreditation: "CACREP-accredited counseling program",
+educationLicense: "Exceptional Children's General Curriculum K–12 Educator License",
+experienceSummary: "More than a decade of experience across education and behavioral health settings",
+```
+
+### 3. How to Update Contact & Location Details
+In `siteConfig.ts`, update the `contact` object when practice-specific contact details are finalized:
 ```typescript
 contact: {
-  phone: "(919) 555-0192",                 // Replace placeholder
+  phone: "(919) 555-0192",                 // Practice placeholder
   email: "hello@growelltherapycollective.com",
   officeAddress: "123 Serenity Way, Suite 200",
   city: "Raleigh",
   state: "NC",
   serviceArea: "Greater Triangle & Statewide Telehealth",
   hours: "Monday – Friday | By Appointment",
-}
-```
-
-### 3. How to Update Licensure & Credentials
-In `siteConfig.ts`, update the `credentials` object:
-```typescript
-credentials: {
-  clinicalCounseling: "Clinical Mental Health Counseling",
-  exactLicenseDesignation: "Licensed Clinical Mental Health Counselor (LCMHC)", // Replace placeholder
-  ncLicenseNumber: "NC LCMHC #12345",                                            // Replace placeholder
-  educationLicense: "Exceptional Children's General Curriculum K–12 Educator License",
-  emdrCertified: "EMDR Certified Therapist",
-  reikiTraining: "Reiki Level II Practitioner (Complementary Wellness)",
-  additionalTraining: "Trauma-Focused Cognitive Behavioral Therapy (TF-CBT) & Person-Centered Modalities",
 }
 ```
 
@@ -92,6 +95,7 @@ To add a new article, simply append an object to the `resourceArticles` array wi
 - `slug`: URL slug (e.g., `understanding-adhd-accommodations`)
 - `title`: Article title
 - `category`: Category name (`Mental Health`, `IEPs & 504 Plans`, `Parents & Families`, etc.)
+- `author`: e.g. `"Jessica N. Mouzon, MA, LCMHC"`
 - `readTime`: e.g. `"5 min read"`
 - `excerpt`: Summary paragraph
 - `keyTakeaways`: 3 bullet points displayed in the summary callout box
@@ -129,17 +133,17 @@ These functions can be wired to your preferred email service, Zapier/Make webhoo
 
 ## 🗺️ Sitemap & Routes
 
-- `/` — Homepage (Hero, 3 Paths to Growth, Therapy & Advocacy Spotlights, Meet Jessica, 4 Pillars, Hybrid Care, CTA)
-- `/about` — Meet Jessica Mouzon (Credentials, Bio, Clinical & K-12 Educator Philosophy)
-- `/therapy` — Clinical Services (Adolescent, Adult, Trauma, Family, TF-CBT, CBT, Person-Centered)
+- `/` — Homepage (Hero, 3 Paths to Growth, Therapy & Advocacy Spotlights, Meet Jessica N. Mouzon, 4 Pillars: Understand/Connect/Integrate/Grow, Hybrid Care, CTA)
+- `/about` — Meet Jessica N. Mouzon, MA, LCMHC (Credentials, Bio, Education & Licensure, Intersection of Mental Health & Education)
+- `/therapy` — Clinical Services (Adolescent 11+, Adult, Trauma, Family, TF-CBT, CBT, EMDR, Person-Centered, Gottman Method Level I Training)
 - `/emdr-therapy` — Dedicated EMDR Therapy Guide & FAQs
-- `/educational-advocacy` — IEP & 504 Plan Navigation & 5-Step Process (with Legal Disclaimers)
-- `/our-approach` — Whole-Person Ecosystem (Evidence-Based vs. Complementary Wellness)
-- `/consultation` — Primary Lead Conversion & Free 15-min Consultation Booking
+- `/educational-advocacy` — IEP & 504 Plan Navigation, Experience Inside the Educational System, When Mental Health & Education Intersect (with Legal Disclaimers)
+- `/our-approach` — 4-Stage Framework (Understand, Connect, Integrate, Grow; Clinical Evidence vs. Complementary Wellness)
+- `/consultation` — Primary Lead Conversion & Consultation Scheduling (Privacy-Preserving Form)
 - `/client-portal` — Secure Gateway to External Client EHR Platform
 - `/resources` — Searchable & Filterable Resource & Article Library
 - `/resources/:slug` — Individual Article Reader with Key Takeaways
-- `/workshops` — B2B / School Professional Development & Speaking Inquiries
+- `/workshops` — B2B / School / Organization Professional Development & Speaking Inquiries (Request a Workshop)
 - `/faq` — Categorized Accordion FAQ
 - `/insurance-fees` — Financial Policies, Superbill Guide & Good Faith Estimate Notice
 - `/contact` — Office Locations, Hybrid Telehealth, Direct Contact Info

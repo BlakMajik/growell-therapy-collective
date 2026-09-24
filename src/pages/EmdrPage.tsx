@@ -53,7 +53,7 @@ export const EmdrPage: React.FC = () => {
     <div className="emdr-page">
       <SEOHead
         title="EMDR Therapy | Trauma Reprocessing & Nervous System Healing"
-        description="Learn about EMDR therapy with certified clinician Jessica Mouzon. Evidence-based trauma reprocessing for adolescents (11+) and adults in North Carolina."
+        description="Learn about EMDR therapy with Jessica N. Mouzon, MA, LCMHC. Evidence-based trauma reprocessing for adolescents (11+) and adults in North Carolina."
         canonicalPath="/emdr-therapy"
         schema={{
           "@context": "https://schema.org",
@@ -219,7 +219,7 @@ export const EmdrPage: React.FC = () => {
               <h3>Standard EMDR Sessions</h3>
               <p className="format-duration">50–60 Minutes</p>
               <p className="format-desc">
-                Weekly or bi-weekly ongoing psychotherapy sessions balancing resourcing, cognitive integration, and memory reprocessing sets.
+                Ongoing psychotherapy sessions balancing resourcing, cognitive integration, and memory reprocessing sets.
               </p>
               <div className="format-pricing-badge">
                 Contact for Availability & Rates
@@ -294,7 +294,7 @@ export const EmdrPage: React.FC = () => {
       {/* Conversion Banner */}
       <ConsultationCTA
         title="Explore If EMDR Is Right For You"
-        subtitle="Book a free consultation with EMDR certified clinician Jessica Mouzon to discuss your symptoms, goals, and customized treatment planning."
+        subtitle="Book a consultation with clinician Jessica N. Mouzon, MA, LCMHC to discuss your symptoms, goals, and customized treatment planning."
       />
 
       <style>{`

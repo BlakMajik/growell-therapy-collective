@@ -64,7 +64,7 @@ export const FaqPage: React.FC = () => {
       question: 'What ages do you serve? Do you see younger children?',
       answer: (
         <p>
-          GroWell Therapy Collective primarily serves <strong>adolescents approximately age 11 through adulthood</strong> (including middle schoolers, high schoolers, college students, young adults, and mature adults). For younger children under age 11, we offer specialized <strong>Parent Consultation & Educational Advocacy</strong> to help families implement behavioral and educational supports.
+          GroWell Therapy Collective primarily serves <strong>adolescents approximately age 11 through adulthood</strong> (including middle schoolers, high schoolers, college students, young adults, and mature adults), as well as parents and families. For younger children under age 11, we offer specialized <strong>Parent Consultation & Educational Advocacy</strong> to help families implement behavioral and educational supports.
         </p>
       ),
     },
@@ -74,7 +74,7 @@ export const FaqPage: React.FC = () => {
       question: 'Do you offer in-person therapy or virtual telehealth?',
       answer: (
         <p>
-          We offer a flexible hybrid model! We provide in-person sessions in our welcoming, tranquil office in {siteConfig.contact.city}, as well as encrypted, HIPAA-compliant telehealth video appointments for eligible clients residing anywhere across {siteConfig.contact.state}.
+          We offer a flexible hybrid model! We provide in-person appointments in North Carolina as well as encrypted, HIPAA-compliant telehealth video sessions for clients residing anywhere across {siteConfig.contact.state}.
         </p>
       ),
     },
@@ -99,12 +99,22 @@ export const FaqPage: React.FC = () => {
       ),
     },
     {
+      id: 'gottman-training',
+      category: 'Therapy Services',
+      question: 'What is Gottman Method Level I Training?',
+      answer: (
+        <p>
+          Jessica has completed Level I Training in Gottman Method Couples Therapy, providing evidence-informed frameworks for understanding relationship dynamics, communication patterns, emotional connection, and conflict. (Please note that this reflects completed Level I professional training and not full Gottman certification).
+        </p>
+      ),
+    },
+    {
       id: 'advocacy-iep-504',
       category: 'Educational Advocacy',
       question: 'How can you help with IEPs and 504 Plans?',
       answer: (
         <p>
-          Jessica Mouzon holds an Exceptional Children’s General Curriculum K–12 Educator License alongside her mental health background. She reviews psychoeducational evaluations, analyzes whether IEP annual goals are measurable and appropriate, helps parents prepare for school meetings, and attends school meetings to support collaborative advocacy.
+          Jessica N. Mouzon holds an Exceptional Children’s General Curriculum K–12 Educator License alongside her mental health background. She reviews psychoeducational evaluations, analyzes whether IEP annual goals are measurable and appropriate, helps parents prepare for school meetings, and attends school meetings to support collaborative advocacy.
         </p>
       ),
     },
@@ -134,7 +144,7 @@ export const FaqPage: React.FC = () => {
       question: 'What happens during an initial consultation?',
       answer: (
         <p>
-          The free 15-minute consultation is a relaxed, no-pressure phone or video conversation. We discuss what brings you to GroWell, explore what kind of support you need, answer basic service and scheduling questions, and determine whether our practice is the best fit for your goals.
+          The initial consultation is a relaxed, supportive conversation where we discuss what brings you to GroWell, explore what kind of support you need, answer service and scheduling questions, and determine whether our practice is the best fit for your goals.
         </p>
       ),
     },
@@ -184,7 +194,7 @@ export const FaqPage: React.FC = () => {
     <div className="faq-page">
       <SEOHead
         title="Frequently Asked Questions | GroWell Therapy Collective"
-        description="Find clear answers regarding insurance, private-pay rates, age ranges (11+), virtual telehealth, EMDR, TF-CBT, and IEP educational advocacy."
+        description="Find clear answers regarding insurance, private-pay rates, age ranges (11+), virtual telehealth, EMDR, TF-CBT, Gottman Level I, and IEP educational advocacy."
         canonicalPath="/faq"
       />
 
@@ -262,7 +272,7 @@ export const FaqPage: React.FC = () => {
       {/* Conversion Banner */}
       <ConsultationCTA
         title="Still Have Questions?"
-        subtitle="We would love to talk through your specific questions during a free, 15-minute consultation."
+        subtitle="We would love to talk through your specific questions during an initial consultation."
       />
 
       <style>{`

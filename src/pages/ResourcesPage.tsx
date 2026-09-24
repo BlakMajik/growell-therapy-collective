@@ -33,7 +33,7 @@ export const ResourcesPage: React.FC = () => {
     <div className="resources-page">
       <SEOHead
         title="Resources & Educational Library | Mental Health & Advocacy"
-        description="Educational guides and practical resources on IEPs, 504 plans, EMDR therapy, teen mental health, and parent advocacy by Jessica Mouzon."
+        description="Educational guides and practical resources on IEPs, 504 plans, EMDR therapy, teen mental health, and parent advocacy by Jessica N. Mouzon, MA, LCMHC."
         canonicalPath="/resources"
       />
 
