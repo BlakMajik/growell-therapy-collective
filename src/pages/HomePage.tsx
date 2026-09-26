@@ -78,7 +78,7 @@ export const HomePage: React.FC = () => {
             <div className="hero-trust-indicators">
               <div className="trust-pill">
                 <CheckCircle2 size={16} className="trust-icon" />
-                <span>NC LCMHC #16006</span>
+                <span>NC Licensed LCMHC</span>
               </div>
               <div className="trust-pill">
                 <CheckCircle2 size={16} className="trust-icon" />
@@ -334,7 +334,7 @@ export const HomePage: React.FC = () => {
                   Jessica N. Mouzon, MA, LCMHC
                 </h2>
                 <p className="clinician-creds-line">
-                  Licensed Clinical Mental Health Counselor (NC #16006) • Exceptional Children's K–12 Educator • EMDR
+                  Licensed Clinical Mental Health Counselor (LCMHC) • Exceptional Children's K–12 Educator • EMDR
                 </p>
 
                 <p>
@@ -354,7 +354,7 @@ export const HomePage: React.FC = () => {
                   </div>
                   <div className="cred-badge-item">
                     <span className="cred-title">Licensed LCMHC</span>
-                    <span className="cred-desc">North Carolina License #16006</span>
+                    <span className="cred-desc">Licensed in North Carolina</span>
                   </div>
                   <div className="cred-badge-item">
                     <span className="cred-title">Exceptional Children's Educator</span>

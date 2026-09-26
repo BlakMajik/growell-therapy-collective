@@ -1,7 +1,7 @@
 # GroWell Therapy Collective LLC — Production Website
 
 **Clinician & Founder:** Jessica N. Mouzon, MA, LCMHC  
-**Professional Designation:** Licensed Clinical Mental Health Counselor (LCMHC) — NC LCMHC License #16006  
+**Professional Designation:** Licensed Clinical Mental Health Counselor (LCMHC) — Licensed in North Carolina  
 **Graduate Education:** Master of Arts in Counseling, Clinical Mental Health Track — Wake Forest University (CACREP-accredited)  
 **Educational Credential:** Exceptional Children's General Curriculum K–12 Educator License  
 **Core Practice Areas:** Clinical Mental Health Therapy (EMDR, TF-CBT, CBT, Person-Centered Therapy, Gottman Method Level I Training) • Exceptional Children's K–12 Educational & IEP Advocacy • Whole-Person Wellness (Reiki Level II)
@@ -42,7 +42,7 @@ This produces an optimized, static production bundle in the `/dist` directory, r
 
 ## ⚙️ Centralized Configuration (`src/config/siteConfig.ts`)
 
-All practice data, verified credentials, license numbers, graduate education, contact details, and third-party portal integrations are managed in a single, well-documented file:
+All practice data, verified credentials, graduate education, contact details, and third-party portal integrations are managed in a single, well-documented file:
 
 👉 `src/config/siteConfig.ts`
 
@@ -61,7 +61,7 @@ clinicianName: "Jessica N. Mouzon",
 clinicianCredentials: "MA, LCMHC",
 clinicianTitle: "Licensed Clinical Mental Health Counselor & Educational Specialist",
 exactLicenseDesignation: "Licensed Clinical Mental Health Counselor (LCMHC)",
-ncLicenseNumber: "NC LCMHC License #16006",
+ncLicenseNumber: "Licensed in North Carolina",
 graduateEducation: "Master of Arts in Counseling, Clinical Mental Health Track — Wake Forest University",
 graduateAccreditation: "CACREP-accredited counseling program",
 educationLicense: "Exceptional Children's General Curriculum K–12 Educator License",

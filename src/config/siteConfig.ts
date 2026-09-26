@@ -94,7 +94,7 @@ export const siteConfig: SiteConfig = {
   clinicianCredentials: "MA, LCMHC",
   clinicianTitle: "Licensed Clinical Mental Health Counselor & Educational Specialist",
   exactLicenseDesignation: "Licensed Clinical Mental Health Counselor (LCMHC)",
-  ncLicenseNumber: "NC LCMHC License #16006",
+  ncLicenseNumber: "Licensed in North Carolina",
   graduateEducation: "Master of Arts in Counseling, Clinical Mental Health Track — Wake Forest University",
   graduateAccreditation: "CACREP-accredited counseling program",
   educationLicense: "Exceptional Children's General Curriculum K–12 Educator License",
@@ -116,7 +116,7 @@ export const siteConfig: SiteConfig = {
   credentials: {
     clinicalCounseling: "Clinical Mental Health Counseling",
     exactLicenseDesignation: "Licensed Clinical Mental Health Counselor (LCMHC)",
-    ncLicenseNumber: "NC LCMHC License #16006",
+    ncLicenseNumber: "Licensed in North Carolina",
     graduateEducation: "Master of Arts in Counseling, Clinical Mental Health Track — Wake Forest University",
     graduateAccreditation: "CACREP-accredited counseling program",
     educationLicense: "Exceptional Children's General Curriculum K–12 Educator License",

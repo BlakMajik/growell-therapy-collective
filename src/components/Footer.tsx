@@ -39,7 +39,7 @@ export const Footer: React.FC = () => {
 
             <div className="footer-clinician-info">
               <p className="clinician-name">{siteConfig.clinicianName}, {siteConfig.clinicianCredentials}</p>
-              <p className="clinician-meta">{siteConfig.exactLicenseDesignation} ({siteConfig.ncLicenseNumber})</p>
+              <p className="clinician-meta">{siteConfig.exactLicenseDesignation} • Licensed in NC</p>
               <p className="clinician-meta">{siteConfig.educationLicense}</p>
               <p className="clinician-meta">EMDR • TF-CBT • CBT • Gottman Level I • Reiki II</p>
             </div>

@@ -173,7 +173,7 @@ export const Header: React.FC = () => {
             </Link>
 
             <p className="mobile-drawer-disclaimer">
-              {siteConfig.clinicianName}, {siteConfig.clinicianCredentials} • {siteConfig.exactLicenseDesignation} • {siteConfig.credentials.ncLicenseNumber}
+              {siteConfig.clinicianName}, {siteConfig.clinicianCredentials} • {siteConfig.exactLicenseDesignation} • Licensed in NC
             </p>
           </div>
         </div>

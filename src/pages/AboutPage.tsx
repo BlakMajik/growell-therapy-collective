@@ -26,7 +26,7 @@ export const AboutPage: React.FC = () => {
     <div className="about-page">
       <SEOHead
         title="Jessica N. Mouzon, MA, LCMHC"
-        description="Learn about Jessica N. Mouzon, MA, LCMHC, founder of GroWell Therapy Collective. Licensed Clinical Mental Health Counselor (NC #16006), Exceptional Children's K–12 Educator, and EMDR clinician."
+        description="Learn about Jessica N. Mouzon, MA, LCMHC, founder of GroWell Therapy Collective. Licensed Clinical Mental Health Counselor (LCMHC), Exceptional Children's K–12 Educator, and EMDR clinician."
         canonicalPath="/about"
       />
 
