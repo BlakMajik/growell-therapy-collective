@@ -180,7 +180,7 @@ export const AboutPage: React.FC = () => {
               <div className="cred-status-box">
                 <p><strong>Trauma & Reprocessing:</strong> EMDR & TF-CBT</p>
                 <p><strong>Cognitive / Humanistic:</strong> CBT & Person-Centered</p>
-                <p><strong>Couples & Relationships:</strong> Gottman Method Level I Training</p>
+                <p><strong>Couples & Relationships:</strong> Gottman Level 1 Trained</p>
                 <p><strong>Complementary Wellness:</strong> Reiki Level II</p>
               </div>
               <p className="cred-card-desc">

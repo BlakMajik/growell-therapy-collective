@@ -101,10 +101,10 @@ export const FaqPage: React.FC = () => {
     {
       id: 'gottman-training',
       category: 'Therapy Services',
-      question: 'What is Gottman Method Level I Training?',
+      question: 'What does Gottman Level 1 Trained mean?',
       answer: (
         <p>
-          Jessica has completed Level I Training in Gottman Method Couples Therapy, providing evidence-informed frameworks for understanding relationship dynamics, communication patterns, emotional connection, and conflict. (Please note that this reflects completed Level I professional training and not full Gottman certification).
+          Jessica is Gottman Level 1 Trained in Gottman Method Couples Therapy, providing evidence-informed frameworks for understanding relationship dynamics, communication patterns, emotional connection, and conflict. (Please note that this reflects completed Level 1 professional training and not full Gottman certification).
         </p>
       ),
     },
@@ -194,7 +194,7 @@ export const FaqPage: React.FC = () => {
     <div className="faq-page">
       <SEOHead
         title="Frequently Asked Questions | GroWell Therapy Collective"
-        description="Find clear answers regarding insurance, private-pay rates, age ranges (11+), virtual telehealth, EMDR, TF-CBT, Gottman Level I, and IEP educational advocacy."
+        description="Find clear answers regarding insurance, private-pay rates, age ranges (11+), virtual telehealth, EMDR, TF-CBT, Gottman Level 1 Trained, and IEP educational advocacy."
         canonicalPath="/faq"
       />
 

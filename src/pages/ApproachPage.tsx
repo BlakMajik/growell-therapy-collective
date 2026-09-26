@@ -28,7 +28,7 @@ export const ApproachPage: React.FC = () => {
     <div className="approach-page">
       <SEOHead
         title="Our Whole-Person Approach"
-        description="Discover how GroWell Therapy Collective integrates evidence-based psychotherapy (EMDR, CBT, TF-CBT, Gottman Level I) with educational insight and complementary wellness."
+        description="Discover how GroWell Therapy Collective integrates evidence-based psychotherapy (EMDR, CBT, TF-CBT, Gottman Level 1 Trained) with educational insight and complementary wellness."
         canonicalPath="/our-approach"
       />
 
@@ -175,7 +175,7 @@ export const ApproachPage: React.FC = () => {
                   <p>Humanistic collaboration fostering unconditional positive regard, psychological safety, and self-directed growth.</p>
                 </div>
                 <div className="framework-item">
-                  <h4>Gottman Method Level I Training</h4>
+                  <h4>Gottman Level 1 Trained</h4>
                   <p>Evidence-informed relationship frameworks focusing on communication patterns, emotional attunement, and conflict resolution dynamics.</p>
                 </div>
               </div>
@@ -221,7 +221,7 @@ export const ApproachPage: React.FC = () => {
             <AlertCircle size={22} className="notice-icon" />
             <div className="notice-content">
               <p>
-                <strong>Clinical & Complementary Disclaimer:</strong> Complementary approaches (such as Reiki Level II, art-informed activities, and nature metaphors) are offered strictly as optional wellness practices for relaxation and self-reflection. They are not presented as equivalent in evidence base to clinical psychotherapy modalities (EMDR, CBT, TF-CBT, Gottman Method Level I) nor as replacements for medically necessary psychiatric treatment. Incorporating any experiential medium is entirely voluntary and tailored to client consent within a broader clinical treatment plan.
+                <strong>Clinical & Complementary Disclaimer:</strong> Complementary approaches (such as Reiki Level II, art-informed activities, and nature metaphors) are offered strictly as optional wellness practices for relaxation and self-reflection. They are not presented as equivalent in evidence base to clinical psychotherapy modalities (EMDR, CBT, TF-CBT, Gottman Level 1 Trained) nor as replacements for medically necessary psychiatric treatment. Incorporating any experiential medium is entirely voluntary and tailored to client consent within a broader clinical treatment plan.
               </p>
             </div>
           </div>

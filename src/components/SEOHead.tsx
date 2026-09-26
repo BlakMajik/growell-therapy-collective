@@ -25,7 +25,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
 
   const metaDesc =
     description ||
-    `GroWell Therapy Collective provides compassionate mental health counseling, trauma therapy (EMDR, TF-CBT, CBT), Gottman Method Level I frameworks, and K–12 IEP educational advocacy with ${siteConfig.clinicianName}, ${siteConfig.clinicianCredentials}.`;
+    `GroWell Therapy Collective provides compassionate mental health counseling, trauma therapy (EMDR, TF-CBT, CBT), Gottman Level 1 Trained frameworks, and K–12 IEP educational advocacy with ${siteConfig.clinicianName}, ${siteConfig.clinicianCredentials}.`;
 
   const siteUrl = "https://growelltherapycollective.com";
   const canonicalUrl = `${siteUrl}${canonicalPath}`;
@@ -84,7 +84,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
           "Cognitive Behavioral Therapy (CBT)",
           "Trauma-Focused Cognitive Behavioral Therapy (TF-CBT)",
           "Eye Movement Desensitization and Reprocessing (EMDR)",
-          "Gottman Method Level I Training",
+          "Gottman Level 1 Trained",
           "Person-Centered Therapy",
           "Exceptional Children Special Education",
           "IEP & 504 Plan Educational Advocacy"

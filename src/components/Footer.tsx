@@ -41,7 +41,7 @@ export const Footer: React.FC = () => {
               <p className="clinician-name">{siteConfig.clinicianName}, {siteConfig.clinicianCredentials}</p>
               <p className="clinician-meta">{siteConfig.exactLicenseDesignation} • Licensed in NC</p>
               <p className="clinician-meta">{siteConfig.educationLicense}</p>
-              <p className="clinician-meta">EMDR • TF-CBT • CBT • Gottman Level I • Reiki II</p>
+              <p className="clinician-meta">EMDR • TF-CBT • CBT • Gottman Level 1 Trained • Reiki II</p>
             </div>
           </div>
 
@@ -116,7 +116,7 @@ export const Footer: React.FC = () => {
         {/* Legal & Disclaimers Strip */}
         <div className="footer-disclaimers">
           <p className="legal-disclaimer">
-            <strong>Legal & Professional Disclaimers:</strong> GroWell Therapy Collective LLC provides licensed mental health counseling and educational consultation. Educational advocacy services do not constitute legal advice or formal legal representation. Gottman Method Level I Training reflects completed professional training in Gottman Method Couples Therapy frameworks and does not imply full certification. Reiki Level II is an optional complementary wellness practice and is not presented as an equivalent substitute for evidence-based psychotherapy or medical intervention. This public website does not collect sensitive health information.
+            <strong>Legal & Professional Disclaimers:</strong> GroWell Therapy Collective LLC provides licensed mental health counseling and educational consultation. Educational advocacy services do not constitute legal advice or formal legal representation. Gottman Level 1 Trained reflects completed professional training in Gottman Method Couples Therapy frameworks and does not imply full certification. Reiki Level II is an optional complementary wellness practice and is not presented as an equivalent substitute for evidence-based psychotherapy or medical intervention. This public website does not collect sensitive health information.
           </p>
         </div>
 

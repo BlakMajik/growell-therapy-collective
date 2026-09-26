@@ -25,7 +25,7 @@ export const TherapyPage: React.FC = () => {
     <div className="therapy-page">
       <SEOHead
         title="Therapy for Adolescents & Adults"
-        description="Individual adolescent therapy (11+), adult counseling, trauma recovery, and family support using EMDR, TF-CBT, CBT, Person-Centered Therapy, and Gottman Method Level I frameworks."
+        description="Individual adolescent therapy (11+), adult counseling, trauma recovery, and family support using EMDR, TF-CBT, CBT, Person-Centered Therapy, and Gottman Level 1 Trained frameworks."
         canonicalPath="/therapy"
       />
 
@@ -275,16 +275,16 @@ export const TherapyPage: React.FC = () => {
               </p>
             </div>
 
-            {/* Gottman Method Level I Training */}
+            {/* Gottman Level 1 Trained */}
             <div className="card modality-card">
               <div className="modality-card-top">
                 <div className="modality-tag-group">
                   <span className="badge badge-terracotta">Relational Framework</span>
                 </div>
-                <h3>Gottman Method Level I Training</h3>
+                <h3>Gottman Level 1 Trained</h3>
               </div>
               <p className="modality-p">
-                Jessica has completed Level I training in the Gottman Method, providing additional frameworks for understanding relationship dynamics, communication patterns, emotional connection, and conflict. These evidence-informed principles help clients recognize recurring relational cycles, deepen mutual attunement, and establish constructive, lasting communication habits.
+                Jessica is Gottman Level 1 Trained, providing additional frameworks for understanding relationship dynamics, communication patterns, emotional connection, and conflict. These evidence-informed principles help clients recognize recurring relational cycles, deepen mutual attunement, and establish constructive, lasting communication habits.
               </p>
             </div>
 

@@ -31,7 +31,7 @@ export const HomePage: React.FC = () => {
     <div className="home-page">
       <SEOHead
         title="Mental Health, Trauma & Educational Advocacy"
-        description="Compassionate mental health therapy, EMDR, TF-CBT, CBT, Gottman Method Level I frameworks, and K–12 IEP educational advocacy for adolescents (11+), adults, and families with Jessica N. Mouzon, MA, LCMHC."
+        description="Compassionate mental health therapy, EMDR, TF-CBT, CBT, Gottman Level 1 Trained frameworks, and K–12 IEP educational advocacy for adolescents (11+), adults, and families with Jessica N. Mouzon, MA, LCMHC."
         canonicalPath="/"
       />
 
@@ -135,7 +135,7 @@ export const HomePage: React.FC = () => {
               <ul className="path-features-list">
                 <li>EMDR & Trauma-Informed Care</li>
                 <li>TF-CBT & Cognitive Behavioral Therapy</li>
-                <li>Gottman Method Level I Frameworks</li>
+                <li>Gottman Level 1 Trained Frameworks</li>
                 <li>Person-Centered Collaboration</li>
               </ul>
               <Link to="/therapy" className="path-card-link">
@@ -207,7 +207,7 @@ export const HomePage: React.FC = () => {
                 <span className="modality-tag">EMDR Therapy</span>
                 <span className="modality-tag">TF-CBT</span>
                 <span className="modality-tag">CBT</span>
-                <span className="modality-tag">Gottman Method Level I Training</span>
+                <span className="modality-tag">Gottman Level 1 Trained</span>
                 <span className="modality-tag">Person-Centered</span>
                 <span className="modality-tag">Reiki Level II (Complementary)</span>
               </div>
@@ -365,7 +365,7 @@ export const HomePage: React.FC = () => {
                     <span className="cred-desc">Evidence-based trauma & cognitive therapies</span>
                   </div>
                   <div className="cred-badge-item">
-                    <span className="cred-title">Gottman Method Level I Training</span>
+                    <span className="cred-title">Gottman Level 1 Trained</span>
                     <span className="cred-desc">Relationship & communication frameworks</span>
                   </div>
                   <div className="cred-badge-item">

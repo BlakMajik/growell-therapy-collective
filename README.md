@@ -4,7 +4,7 @@
 **Professional Designation:** Licensed Clinical Mental Health Counselor (LCMHC) — Licensed in North Carolina  
 **Graduate Education:** Master of Arts in Counseling, Clinical Mental Health Track — Wake Forest University (CACREP-accredited)  
 **Educational Credential:** Exceptional Children's General Curriculum K–12 Educator License  
-**Core Practice Areas:** Clinical Mental Health Therapy (EMDR, TF-CBT, CBT, Person-Centered Therapy, Gottman Method Level I Training) • Exceptional Children's K–12 Educational & IEP Advocacy • Whole-Person Wellness (Reiki Level II)
+**Core Practice Areas:** Clinical Mental Health Therapy (EMDR, TF-CBT, CBT, Person-Centered Therapy, Gottman Level 1 Trained) • Exceptional Children's K–12 Educational & IEP Advocacy • Whole-Person Wellness (Reiki Level II)
 
 ---
 
@@ -135,7 +135,7 @@ These functions can be wired to your preferred email service, Zapier/Make webhoo
 
 - `/` — Homepage (Hero, 3 Paths to Growth, Therapy & Advocacy Spotlights, Meet Jessica N. Mouzon, 4 Pillars: Understand/Connect/Integrate/Grow, Hybrid Care, CTA)
 - `/about` — Meet Jessica N. Mouzon, MA, LCMHC (Credentials, Bio, Education & Licensure, Intersection of Mental Health & Education)
-- `/therapy` — Clinical Services (Adolescent 11+, Adult, Trauma, Family, TF-CBT, CBT, EMDR, Person-Centered, Gottman Method Level I Training)
+- `/therapy` — Clinical Services (Adolescent 11+, Adult, Trauma, Family, TF-CBT, CBT, EMDR, Person-Centered, Gottman Level 1 Trained)
 - `/emdr-therapy` — Dedicated EMDR Therapy Guide & FAQs
 - `/educational-advocacy` — IEP & 504 Plan Navigation, Experience Inside the Educational System, When Mental Health & Education Intersect (with Legal Disclaimers)
 - `/our-approach` — 4-Stage Framework (Understand, Connect, Integrate, Grow; Clinical Evidence vs. Complementary Wellness)
